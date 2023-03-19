@@ -19,6 +19,12 @@
 		02789F6729C6E708005AC18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02789F6629C6E708005AC18B /* Assets.xcassets */; };
 		02789F6A29C6E708005AC18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02789F6829C6E708005AC18B /* LaunchScreen.storyboard */; };
 		02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3176729C73837009BF903 /* EnrollmentViewController.swift */; };
+		02E3177029C73DAF009BF903 /* EnrollmentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3176F29C73DAF009BF903 /* EnrollmentProtocols.swift */; };
+		02E3177229C73ED4009BF903 /* EnrollmentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177129C73ED4009BF903 /* EnrollmentInteractor.swift */; };
+		02E3177429C73EDF009BF903 /* EnrollmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177329C73EDF009BF903 /* EnrollmentPresenter.swift */; };
+		02E3177629C73EEB009BF903 /* EnrollmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177529C73EEB009BF903 /* EnrollmentEntity.swift */; };
+		02E3177829C73EF8009BF903 /* EnrollmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177729C73EF8009BF903 /* EnrollmentRouter.swift */; };
+		02E3177A29C7424F009BF903 /* EnrollmentViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177929C7424F009BF903 /* EnrollmentViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +55,12 @@
 		02789F6929C6E708005AC18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02789F6B29C6E708005AC18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E3176729C73837009BF903 /* EnrollmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentViewController.swift; sourceTree = "<group>"; };
+		02E3176F29C73DAF009BF903 /* EnrollmentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentProtocols.swift; sourceTree = "<group>"; };
+		02E3177129C73ED4009BF903 /* EnrollmentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentInteractor.swift; sourceTree = "<group>"; };
+		02E3177329C73EDF009BF903 /* EnrollmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentPresenter.swift; sourceTree = "<group>"; };
+		02E3177529C73EEB009BF903 /* EnrollmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentEntity.swift; sourceTree = "<group>"; };
+		02E3177729C73EF8009BF903 /* EnrollmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentRouter.swift; sourceTree = "<group>"; };
+		02E3177929C7424F009BF903 /* EnrollmentViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 		02E3176929C73CB0009BF903 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				02E3177729C73EF8009BF903 /* EnrollmentRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 		02E3176A29C73CBD009BF903 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				02E3177529C73EEB009BF903 /* EnrollmentEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 		02E3176B29C73CC4009BF903 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				02E3177329C73EDF009BF903 /* EnrollmentPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -151,6 +166,7 @@
 		02E3176C29C73CCC009BF903 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				02E3177129C73ED4009BF903 /* EnrollmentInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				02E3176729C73837009BF903 /* EnrollmentViewController.swift */,
+				02E3177929C7424F009BF903 /* EnrollmentViewControllerExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 		02E3176E29C73CDD009BF903 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				02E3176F29C73DAF009BF903 /* EnrollmentProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -242,10 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E3177829C73EF8009BF903 /* EnrollmentRouter.swift in Sources */,
+				02E3177629C73EEB009BF903 /* EnrollmentEntity.swift in Sources */,
 				02789F5F29C6E707005AC18B /* ViewController.swift in Sources */,
 				02789F5B29C6E707005AC18B /* AppDelegate.swift in Sources */,
 				02789F6529C6E707005AC18B /* Main.xcdatamodeld in Sources */,
+				02E3177029C73DAF009BF903 /* EnrollmentProtocols.swift in Sources */,
+				02E3177429C73EDF009BF903 /* EnrollmentPresenter.swift in Sources */,
 				02789F5D29C6E707005AC18B /* SceneDelegate.swift in Sources */,
+				02E3177229C73ED4009BF903 /* EnrollmentInteractor.swift in Sources */,
+				02E3177A29C7424F009BF903 /* EnrollmentViewControllerExtension.swift in Sources */,
 				02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

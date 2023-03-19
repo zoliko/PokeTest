@@ -17,12 +17,8 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IDEnrollmentView") as? EnrollmentViewController
-        else {
-            return
-        }
-        view.modalPresentationStyle = .fullScreen
-        self.present(view, animated: true)
+        
+        self.present(EnrollmentRouter.createModule(), animated: true)
         
     }
 
