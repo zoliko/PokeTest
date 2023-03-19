@@ -13,6 +13,8 @@ public enum DIVCPalletColor {
     case primaryBlue
     case secondaryBlue
     case primaryYellow
+    case primaryWhite
+    case appClear
     
     public var color: UIColor {
         switch self {
@@ -22,6 +24,10 @@ public enum DIVCPalletColor {
             return UIColor.secondaryBlue
         case .primaryYellow:
             return UIColor.primaryYellow
+        case .primaryWhite:
+            return UIColor.primaryWhite
+        case .appClear:
+            return UIColor.appClear
         }
     }
 }

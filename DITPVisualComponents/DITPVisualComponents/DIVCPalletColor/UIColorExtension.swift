@@ -29,6 +29,9 @@ public extension UIColor {
     
     //MARK: - Basic Pallet Colors
     
+    public static var primaryWhite: UIColor { return UIColor.white }
+    public static var appClear: UIColor { return UIColor.clear }
+    
     public static var primaryBlue: UIColor { return createColorFrom(hexadecimalString: "#5C98DB") }
     public static var secondaryBlue: UIColor { return createColorFrom(hexadecimalString: "#0E437E") }
     

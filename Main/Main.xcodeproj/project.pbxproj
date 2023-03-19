@@ -71,6 +71,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		023B094829C71514006B7D1E /* Functionalities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functionalities;
+			sourceTree = "<group>";
+		};
+		023B094929C7152F006B7D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02789F6029C6E707005AC18B /* Main.storyboard */,
+				02789F6829C6E708005AC18B /* LaunchScreen.storyboard */,
+				02789F5E29C6E707005AC18B /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		02789F4E29C6E707005AC18B = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +110,9 @@
 			children = (
 				02789F5A29C6E707005AC18B /* AppDelegate.swift */,
 				02789F5C29C6E707005AC18B /* SceneDelegate.swift */,
-				02789F5E29C6E707005AC18B /* ViewController.swift */,
-				02789F6029C6E707005AC18B /* Main.storyboard */,
+				023B094929C7152F006B7D1E /* View */,
+				023B094829C71514006B7D1E /* Functionalities */,
 				02789F6629C6E708005AC18B /* Assets.xcassets */,
-				02789F6829C6E708005AC18B /* LaunchScreen.storyboard */,
 				02789F6B29C6E708005AC18B /* Info.plist */,
 				02789F6329C6E707005AC18B /* Main.xcdatamodeld */,
 			);

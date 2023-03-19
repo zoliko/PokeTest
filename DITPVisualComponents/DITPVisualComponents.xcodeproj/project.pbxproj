@@ -58,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				023B093B29C6F641006B7D1E /* assets.xcassets */,
+				023B094729C714DE006B7D1E /* DIVCFunctionalities */,
 				023B094029C6FB66006B7D1E /* DIVCVisualEfects */,
 				023B093D29C6F78F006B7D1E /* DIVCFrameWorkConfiguration */,
 				023B092629C6EA8D006B7D1E /* DIVCPalletColor */,
@@ -90,6 +91,13 @@
 				023B094129C6FBC8006B7D1E /* DIVCGradientColorEfect.swift */,
 			);
 			path = DIVCVisualEfects;
+			sourceTree = "<group>";
+		};
+		023B094729C714DE006B7D1E /* DIVCFunctionalities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DIVCFunctionalities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
