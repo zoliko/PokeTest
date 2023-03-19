@@ -14,6 +14,8 @@
 		023B093F29C6F7AA006B7D1E /* DIVCFrameWorkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B093E29C6F7AA006B7D1E /* DIVCFrameWorkConfiguration.swift */; };
 		023B094229C6FBC8006B7D1E /* DIVCGradientColorEfect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B094129C6FBC8006B7D1E /* DIVCGradientColorEfect.swift */; };
 		023B094629C700D9006B7D1E /* DIVCVisualEfects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B094529C700D9006B7D1E /* DIVCVisualEfects.swift */; };
+		02E3179729C7B248009BF903 /* DIVCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179629C7B248009BF903 /* DIVCTextField.swift */; };
+		02E3179929C7B374009BF903 /* DIVCTextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		023B093E29C6F7AA006B7D1E /* DIVCFrameWorkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCFrameWorkConfiguration.swift; sourceTree = "<group>"; };
 		023B094129C6FBC8006B7D1E /* DIVCGradientColorEfect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCGradientColorEfect.swift; sourceTree = "<group>"; };
 		023B094529C700D9006B7D1E /* DIVCVisualEfects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCVisualEfects.swift; sourceTree = "<group>"; };
+		02E3179629C7B248009BF903 /* DIVCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextField.swift; sourceTree = "<group>"; };
+		02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				023B093B29C6F641006B7D1E /* assets.xcassets */,
+				02E3179529C7B22C009BF903 /* DIVCTextField */,
 				023B094729C714DE006B7D1E /* DIVCFunctionalities */,
 				023B094029C6FB66006B7D1E /* DIVCVisualEfects */,
 				023B093D29C6F78F006B7D1E /* DIVCFrameWorkConfiguration */,
@@ -98,6 +103,15 @@
 			children = (
 			);
 			path = DIVCFunctionalities;
+			sourceTree = "<group>";
+		};
+		02E3179529C7B22C009BF903 /* DIVCTextField */ = {
+			isa = PBXGroup;
+			children = (
+				02E3179629C7B248009BF903 /* DIVCTextField.swift */,
+				02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */,
+			);
+			path = DIVCTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,8 @@
 				023B094229C6FBC8006B7D1E /* DIVCGradientColorEfect.swift in Sources */,
 				023B092829C6EB53006B7D1E /* DIVCPalletColor.swift in Sources */,
 				023B092A29C6EC3C006B7D1E /* UIColorExtension.swift in Sources */,
+				02E3179929C7B374009BF903 /* DIVCTextFieldStyles.swift in Sources */,
+				02E3179729C7B248009BF903 /* DIVCTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
