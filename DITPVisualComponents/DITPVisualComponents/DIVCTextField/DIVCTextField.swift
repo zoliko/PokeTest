@@ -9,19 +9,18 @@ import UIKit
 
 @IBDesignable public class DIVCTextField: UITextField {
     
-    public var styleTextField: DIVCTextFieldStyles = DIVCTextFieldStyles.none {
+    internal var modelConfiguration: DIVCTextFieldConfigurationModel =  DIVCTextFieldConfigurationModel() {
         didSet { loadStyle() }
     }
+    
     @IBInspectable public var style: Int = 0 {
         didSet {
-            styleTextField = DIVCTextFieldStyles(rawValue: style) ?? .none
+            modelConfiguration.setNewStyle(style: DIVCTextFieldStyles.init(rawValue: style) ?? .basic)
         }
     }
+    
     internal func loadStyle() {
-        switch styleTextField {
-        case .none:
-            self.backgroundColor = UIColor.red
-        }
+        self.backgroundColor = modelConfiguration.backgroundextField?.color
     }
     
     
