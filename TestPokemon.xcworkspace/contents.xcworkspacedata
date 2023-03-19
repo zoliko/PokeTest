@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DITPEnrollment/DITPEnrollment.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DITPVisualComponents/DITPVisualComponents.xcodeproj">
    </FileRef>
    <FileRef
