@@ -15,13 +15,11 @@ public class EnrollmentRouter: EnrollmentRouterProtocol {
         }
         view.modalPresentationStyle = .fullScreen
         let presenter: EnrollmentPresenterProtocol & EnrollmentInteractorOutputProtocol = EnrollmentPresenter()
-        
         view.presenter = presenter
         view.presenter?.view = view
         view.presenter?.route = EnrollmentRouter()
         view.presenter?.interactor = EnrollmentInteractor()
         view.presenter?.interactor?.presenter = presenter
-        
         return view
         
     }

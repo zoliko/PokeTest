@@ -8,8 +8,8 @@
 import Foundation
 
 public class EnrollmentInteractor: EnrollmentInteractorInputProtocol {
-    
     public var presenter: EnrollmentInteractorOutputProtocol?
-    
-    
+    public func sendRequestMessage() {
+        presenter?.resiveResponseMessage()
+    }
 }

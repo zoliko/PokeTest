@@ -9,20 +9,14 @@ import UIKit
 import DITPVisualComponents
 
 class ViewController: UIViewController {
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .primaryBlue
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         self.present(EnrollmentRouter.createModule(), animated: true)
         
     }
-
-
-
 }
 
