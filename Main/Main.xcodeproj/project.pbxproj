@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023B093629C6EFCD006B7D1E /* DITPFunctionalities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023B092F29C6EEE5006B7D1E /* DITPFunctionalities.framework */; };
+		023B093729C6EFCD006B7D1E /* DITPFunctionalities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 023B092F29C6EEE5006B7D1E /* DITPFunctionalities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		023B093929C6EFCE006B7D1E /* DITPVisualComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023B093029C6EEE5006B7D1E /* DITPVisualComponents.framework */; };
+		023B093A29C6EFCE006B7D1E /* DITPVisualComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 023B093029C6EEE5006B7D1E /* DITPVisualComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02789F5B29C6E707005AC18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02789F5A29C6E707005AC18B /* AppDelegate.swift */; };
 		02789F5D29C6E707005AC18B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02789F5C29C6E707005AC18B /* SceneDelegate.swift */; };
 		02789F5F29C6E707005AC18B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02789F5E29C6E707005AC18B /* ViewController.swift */; };
@@ -16,7 +20,24 @@
 		02789F6A29C6E708005AC18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02789F6829C6E708005AC18B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		023B093829C6EFCD006B7D1E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				023B093729C6EFCD006B7D1E /* DITPFunctionalities.framework in Embed Frameworks */,
+				023B093A29C6EFCE006B7D1E /* DITPVisualComponents.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		023B092F29C6EEE5006B7D1E /* DITPFunctionalities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPFunctionalities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		023B093029C6EEE5006B7D1E /* DITPVisualComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPVisualComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02789F5729C6E707005AC18B /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02789F5A29C6E707005AC18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02789F5C29C6E707005AC18B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023B093629C6EFCD006B7D1E /* DITPFunctionalities.framework in Frameworks */,
+				023B093929C6EFCE006B7D1E /* DITPVisualComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023B092E29C6EEE5006B7D1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				023B092F29C6EEE5006B7D1E /* DITPFunctionalities.framework */,
+				023B093029C6EEE5006B7D1E /* DITPVisualComponents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02789F4E29C6E707005AC18B = {
 			isa = PBXGroup;
 			children = (
 				02789F5929C6E707005AC18B /* Main */,
 				02789F5829C6E707005AC18B /* Products */,
+				023B092E29C6EEE5006B7D1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +113,7 @@
 				02789F5329C6E707005AC18B /* Sources */,
 				02789F5429C6E707005AC18B /* Frameworks */,
 				02789F5529C6E707005AC18B /* Resources */,
+				023B093829C6EFCD006B7D1E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +343,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.Main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,6 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +375,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.Main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -3,22 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */; };
-		02789F7F29C6E755005AC18B /* DITPFunctionalities.h in Headers */ = {isa = PBXBuildFile; fileRef = 02789F7E29C6E755005AC18B /* DITPFunctionalities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023B092029C6EA80006B7D1E /* DITPVisualComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 023B091F29C6EA80006B7D1E /* DITPVisualComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023B092829C6EB53006B7D1E /* DIVCPalletColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B092729C6EB53006B7D1E /* DIVCPalletColor.swift */; };
+		023B092A29C6EC3C006B7D1E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B092929C6EC3C006B7D1E /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFDensityPixel.swift; sourceTree = "<group>"; };
-		02789F7B29C6E755005AC18B /* DITPFunctionalities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPFunctionalities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02789F7E29C6E755005AC18B /* DITPFunctionalities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPFunctionalities.h; sourceTree = "<group>"; };
+		023B091C29C6EA80006B7D1E /* DITPVisualComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPVisualComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		023B091F29C6EA80006B7D1E /* DITPVisualComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPVisualComponents.h; sourceTree = "<group>"; };
+		023B092729C6EB53006B7D1E /* DIVCPalletColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCPalletColor.swift; sourceTree = "<group>"; };
+		023B092929C6EC3C006B7D1E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02789F7829C6E755005AC18B /* Frameworks */ = {
+		023B091929C6EA80006B7D1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -28,106 +30,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		023B092D29C6EDBD006B7D1E /* DIFDensityPixel */ = {
+		023B091229C6EA80006B7D1E = {
 			isa = PBXGroup;
 			children = (
-				023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */,
-			);
-			path = DIFDensityPixel;
-			sourceTree = "<group>";
-		};
-		02789F7129C6E754005AC18B = {
-			isa = PBXGroup;
-			children = (
-				02789F7D29C6E755005AC18B /* DITPFunctionalities */,
-				02789F7C29C6E755005AC18B /* Products */,
+				023B091E29C6EA80006B7D1E /* DITPVisualComponents */,
+				023B091D29C6EA80006B7D1E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02789F7C29C6E755005AC18B /* Products */ = {
+		023B091D29C6EA80006B7D1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02789F7B29C6E755005AC18B /* DITPFunctionalities.framework */,
+				023B091C29C6EA80006B7D1E /* DITPVisualComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02789F7D29C6E755005AC18B /* DITPFunctionalities */ = {
+		023B091E29C6EA80006B7D1E /* DITPVisualComponents */ = {
 			isa = PBXGroup;
 			children = (
-				023B092D29C6EDBD006B7D1E /* DIFDensityPixel */,
-				02789F7E29C6E755005AC18B /* DITPFunctionalities.h */,
+				023B092629C6EA8D006B7D1E /* DIVCPalletColor */,
+				023B091F29C6EA80006B7D1E /* DITPVisualComponents.h */,
 			);
-			path = DITPFunctionalities;
+			path = DITPVisualComponents;
+			sourceTree = "<group>";
+		};
+		023B092629C6EA8D006B7D1E /* DIVCPalletColor */ = {
+			isa = PBXGroup;
+			children = (
+				023B092729C6EB53006B7D1E /* DIVCPalletColor.swift */,
+				023B092929C6EC3C006B7D1E /* UIColorExtension.swift */,
+			);
+			path = DIVCPalletColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02789F7629C6E755005AC18B /* Headers */ = {
+		023B091729C6EA80006B7D1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02789F7F29C6E755005AC18B /* DITPFunctionalities.h in Headers */,
+				023B092029C6EA80006B7D1E /* DITPVisualComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02789F7A29C6E755005AC18B /* DITPFunctionalities */ = {
+		023B091B29C6EA80006B7D1E /* DITPVisualComponents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02789F8229C6E755005AC18B /* Build configuration list for PBXNativeTarget "DITPFunctionalities" */;
+			buildConfigurationList = 023B092329C6EA80006B7D1E /* Build configuration list for PBXNativeTarget "DITPVisualComponents" */;
 			buildPhases = (
-				02789F7629C6E755005AC18B /* Headers */,
-				02789F7729C6E755005AC18B /* Sources */,
-				02789F7829C6E755005AC18B /* Frameworks */,
-				02789F7929C6E755005AC18B /* Resources */,
+				023B091729C6EA80006B7D1E /* Headers */,
+				023B091829C6EA80006B7D1E /* Sources */,
+				023B091929C6EA80006B7D1E /* Frameworks */,
+				023B091A29C6EA80006B7D1E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DITPFunctionalities;
-			productName = DITPFunctionalities;
-			productReference = 02789F7B29C6E755005AC18B /* DITPFunctionalities.framework */;
+			name = DITPVisualComponents;
+			productName = DITPVisualComponents;
+			productReference = 023B091C29C6EA80006B7D1E /* DITPVisualComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02789F7229C6E754005AC18B /* Project object */ = {
+		023B091329C6EA80006B7D1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					02789F7A29C6E755005AC18B = {
-						CreatedOnToolsVersion = 13.2.1;
+					023B091B29C6EA80006B7D1E = {
+						CreatedOnToolsVersion = 14.1;
 						LastSwiftMigration = 1410;
 					};
 				};
 			};
-			buildConfigurationList = 02789F7529C6E754005AC18B /* Build configuration list for PBXProject "DITPFunctionalities" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 023B091629C6EA80006B7D1E /* Build configuration list for PBXProject "DITPVisualComponents" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 02789F7129C6E754005AC18B;
-			productRefGroup = 02789F7C29C6E755005AC18B /* Products */;
+			mainGroup = 023B091229C6EA80006B7D1E;
+			productRefGroup = 023B091D29C6EA80006B7D1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02789F7A29C6E755005AC18B /* DITPFunctionalities */,
+				023B091B29C6EA80006B7D1E /* DITPVisualComponents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02789F7929C6E755005AC18B /* Resources */ = {
+		023B091A29C6EA80006B7D1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,25 +140,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02789F7729C6E755005AC18B /* Sources */ = {
+		023B091829C6EA80006B7D1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */,
+				023B092829C6EB53006B7D1E /* DIVCPalletColor.swift in Sources */,
+				023B092A29C6EC3C006B7D1E /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		02789F8029C6E755005AC18B /* Debug */ = {
+		023B092129C6EA80006B7D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -200,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -212,14 +215,13 @@
 			};
 			name = Debug;
 		};
-		02789F8129C6E755005AC18B /* Release */ = {
+		023B092229C6EA80006B7D1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -258,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,7 +272,7 @@
 			};
 			name = Release;
 		};
-		02789F8329C6E755005AC18B /* Debug */ = {
+		023B092429C6EA80006B7D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -291,7 +293,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPFunctionalities;
+				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPVisualComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -304,7 +306,7 @@
 			};
 			name = Debug;
 		};
-		02789F8429C6E755005AC18B /* Release */ = {
+		023B092529C6EA80006B7D1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -325,7 +327,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPFunctionalities;
+				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPVisualComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -340,25 +342,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02789F7529C6E754005AC18B /* Build configuration list for PBXProject "DITPFunctionalities" */ = {
+		023B091629C6EA80006B7D1E /* Build configuration list for PBXProject "DITPVisualComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02789F8029C6E755005AC18B /* Debug */,
-				02789F8129C6E755005AC18B /* Release */,
+				023B092129C6EA80006B7D1E /* Debug */,
+				023B092229C6EA80006B7D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02789F8229C6E755005AC18B /* Build configuration list for PBXNativeTarget "DITPFunctionalities" */ = {
+		023B092329C6EA80006B7D1E /* Build configuration list for PBXNativeTarget "DITPVisualComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02789F8329C6E755005AC18B /* Debug */,
-				02789F8429C6E755005AC18B /* Release */,
+				023B092429C6EA80006B7D1E /* Debug */,
+				023B092529C6EA80006B7D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 02789F7229C6E754005AC18B /* Project object */;
+	rootObject = 023B091329C6EA80006B7D1E /* Project object */;
 }
