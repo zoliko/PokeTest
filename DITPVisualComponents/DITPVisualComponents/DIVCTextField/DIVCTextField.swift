@@ -20,9 +20,6 @@ import UIKit
     }
     
     internal func loadStyle() {
-        self.backgroundColor = modelConfiguration.backgroundextField?.color
+        self.backgroundColor = modelConfiguration.backgroundTextField?.color
     }
-    
-    
-    
 }

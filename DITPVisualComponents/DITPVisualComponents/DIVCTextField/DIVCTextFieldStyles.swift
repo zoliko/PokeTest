@@ -9,5 +9,5 @@ import Foundation
 
 public enum DIVCTextFieldStyles: Int {
     case basic = 0
-    case success = 1
+    case loggin = 1
 }

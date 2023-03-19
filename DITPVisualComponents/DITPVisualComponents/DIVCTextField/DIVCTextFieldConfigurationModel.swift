@@ -10,7 +10,7 @@ import Foundation
 public struct DIVCTextFieldConfigurationModel {
     
     var styleTextField: DIVCTextFieldStyles
-    var backgroundextField: DIVCPalletColor?
+    var backgroundTextField: DIVCPalletColor? = DIVCPalletColor.primaryWhite
     
     init(styleTextField: DIVCTextFieldStyles = .basic) {
         self.styleTextField = styleTextField
@@ -24,9 +24,9 @@ public struct DIVCTextFieldConfigurationModel {
     internal mutating func getConfiguration(style: DIVCTextFieldStyles) {
         switch style {
         case .basic:
-            self.backgroundextField = DIVCPalletColor.primaryYellow
-        case .success:
-            self.backgroundextField = DIVCPalletColor.primaryBlue
+            self.backgroundTextField = DIVCPalletColor.primaryWhite
+        case .loggin:
+            self.backgroundTextField = DIVCPalletColor.primaryWhite
         }
     }
 }
