@@ -10,22 +10,22 @@ import DITPVisualComponents
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var adorno: UIImageView!
-    @IBOutlet weak var adorno2: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpView()
+        view.backgroundColor = .primaryBlue
     }
-    
-    func setUpView() {
-        adorno.image = UIImage(named: "DIVCShadowballrotate", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
-        image.image = UIImage(named: "DIVCLogo", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
-        view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
-        adorno2.image = UIImage(named: "DIVCShadowball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)?.withTintColor(.primaryWhite.withAlphaComponent(0.05), renderingMode: .alwaysOriginal)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IDEnrollmentView") as? EnrollmentViewController
+        else {
+            return
+        }
+        view.modalPresentationStyle = .fullScreen
+        self.present(view, animated: true)
+        
     }
+
 
 
 }

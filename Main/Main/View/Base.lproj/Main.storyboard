@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gkX-Yz-oO7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3AR-yK-Kds">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Enrollment View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="IDEnrollmentView" id="BYZ-38-t0r" customClass="EnrollmentViewController" customModule="Main" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-up-5mS">
-                                <rect key="frame" x="34" y="152" width="346" height="155"/>
+                                <rect key="frame" x="34" y="108" width="346" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="346" id="2bd-3Q-v8n"/>
                                     <constraint firstAttribute="height" constant="155" id="jh1-kw-4u2"/>
@@ -33,8 +33,8 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="ztr-mf-450"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="reX-hI-Ngk">
-                                <rect key="frame" x="20" y="392" width="374" height="363"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reX-hI-Ngk">
+                                <rect key="frame" x="20" y="348" width="374" height="407"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="363" id="P5F-c6-zT3"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="ubK-Zc-pqr"/>
@@ -57,32 +57,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="KQt-tr-Ft7"/>
                     <connections>
-                        <outlet property="adorno" destination="h2J-Mr-7Z0" id="3H4-VW-Lgm"/>
-                        <outlet property="adorno2" destination="reX-hI-Ngk" id="SaS-Ed-lwx"/>
-                        <outlet property="image" destination="Tmh-up-5mS" id="z0N-Uq-iqX"/>
+                        <outlet property="logo" destination="Tmh-up-5mS" id="XYL-ka-IGn"/>
+                        <outlet property="pokeball" destination="reX-hI-Ngk" id="jra-dG-ede"/>
+                        <outlet property="pokeballRotate" destination="h2J-Mr-7Z0" id="Lq9-Yg-Zii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065.217391304348" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="854" y="-56"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="DdG-h7-hYR">
+        <!--View Controller-->
+        <scene sceneID="ELd-Re-fOJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gkX-Yz-oO7" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Y8-PQ-jyn">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g24-IT-nhl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eSd-4W-aUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="3AR-yK-Kds" customClass="ViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmw-rL-6Tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bfL-C8-fMz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4v-i1-XOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-86" y="-56"/>
         </scene>
     </scenes>
     <resources>

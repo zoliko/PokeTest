@@ -18,6 +18,7 @@
 		02789F6529C6E707005AC18B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02789F6329C6E707005AC18B /* Main.xcdatamodeld */; };
 		02789F6729C6E708005AC18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02789F6629C6E708005AC18B /* Assets.xcassets */; };
 		02789F6A29C6E708005AC18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02789F6829C6E708005AC18B /* LaunchScreen.storyboard */; };
+		02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3176729C73837009BF903 /* EnrollmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		02789F6629C6E708005AC18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02789F6929C6E708005AC18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02789F6B29C6E708005AC18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E3176729C73837009BF903 /* EnrollmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,19 +73,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		023B094829C71514006B7D1E /* Functionalities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Functionalities;
-			sourceTree = "<group>";
-		};
 		023B094929C7152F006B7D1E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				02789F6029C6E707005AC18B /* Main.storyboard */,
 				02789F6829C6E708005AC18B /* LaunchScreen.storyboard */,
 				02789F5E29C6E707005AC18B /* ViewController.swift */,
+				02E3176629C73817009BF903 /* Enrollment */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,12 +107,67 @@
 				02789F5A29C6E707005AC18B /* AppDelegate.swift */,
 				02789F5C29C6E707005AC18B /* SceneDelegate.swift */,
 				023B094929C7152F006B7D1E /* View */,
-				023B094829C71514006B7D1E /* Functionalities */,
 				02789F6629C6E708005AC18B /* Assets.xcassets */,
 				02789F6B29C6E708005AC18B /* Info.plist */,
 				02789F6329C6E707005AC18B /* Main.xcdatamodeld */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		02E3176629C73817009BF903 /* Enrollment */ = {
+			isa = PBXGroup;
+			children = (
+				02E3176E29C73CDD009BF903 /* Protocols */,
+				02E3176D29C73CD7009BF903 /* View */,
+				02E3176C29C73CCC009BF903 /* Interactor */,
+				02E3176B29C73CC4009BF903 /* Presenter */,
+				02E3176A29C73CBD009BF903 /* Entity */,
+				02E3176929C73CB0009BF903 /* Router */,
+			);
+			path = Enrollment;
+			sourceTree = "<group>";
+		};
+		02E3176929C73CB0009BF903 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		02E3176A29C73CBD009BF903 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		02E3176B29C73CC4009BF903 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		02E3176C29C73CCC009BF903 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		02E3176D29C73CD7009BF903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E3176729C73837009BF903 /* EnrollmentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02E3176E29C73CDD009BF903 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +246,7 @@
 				02789F5B29C6E707005AC18B /* AppDelegate.swift in Sources */,
 				02789F6529C6E707005AC18B /* Main.xcdatamodeld in Sources */,
 				02789F5D29C6E707005AC18B /* SceneDelegate.swift in Sources */,
+				02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
