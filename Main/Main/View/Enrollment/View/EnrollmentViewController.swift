@@ -23,9 +23,9 @@ class EnrollmentViewController: UIViewController {
     }
     
     func setUpView() {
+        view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
         pokeballRotate.image = UIImage(named: "DIVCShadowballrotate", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
         logo.image = UIImage(named: "DIVCLogo", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
-        view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
         pokeball.image = UIImage(named: "DIVCShadowball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)?.withTintColor(.primaryWhite.withAlphaComponent(0.05), renderingMode: .alwaysOriginal)
     }
 
