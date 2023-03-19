@@ -10,9 +10,13 @@ import DITPVisualComponents
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = DIVCPalletColor.primaryBlue.color
+        image.image = UIImage(named: "DIVCLogo", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
+        view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
     }
 
 
