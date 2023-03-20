@@ -8,7 +8,7 @@
 import UIKit
 import DITPVisualComponents
 import DITPEnrollment
-
+import DITPExternalConnection
 
 class ViewController: UIViewController {
     
@@ -34,4 +34,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
