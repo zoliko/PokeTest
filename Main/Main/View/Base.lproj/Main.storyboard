@@ -59,10 +59,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-st-1Qo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-st-1Qo" customClass="DIVCButton" customModule="DITPVisualComponents">
                                 <rect key="frame" x="122" y="585" width="171" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonAccionLoggin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGN-eW-bwh"/>
                                 </connections>
@@ -122,10 +127,13 @@
     </scenes>
     <designables>
         <designable name="IJ6-wA-Z8E">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+        </designable>
+        <designable name="YIh-st-1Qo">
+            <size key="intrinsicContentSize" width="76" height="34.5"/>
         </designable>
         <designable name="erR-rz-bFw">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
         </designable>
     </designables>
     <resources>
