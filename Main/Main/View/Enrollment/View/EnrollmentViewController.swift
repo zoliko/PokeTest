@@ -52,11 +52,14 @@ class EnrollmentViewController: UIViewController {
         } 
     }
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {
-        if inputUser.isEmpy() && inputPass.isEmpy() {
-            //presenter?.loggIn()
-        } else {
-            //inputUser.changeColorBorderByValidation(validationCase: .error)
-            //inputPass.changeColorBorderByValidation(validationCase: .error)
+        if inputUser.isValidEmail() && !inputPass.isEmpy() {
+            guard let email = inputUser.text,
+                  let password = inputPass.text,
+                  let context = self.getCoreDataContext()
+            else {
+                return
+            }
+            presenter?.loggIn(withEmail: email, withPassword: password, context: context)
         }
     }
 }

@@ -15,8 +15,8 @@ public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     public var route: EnrollmentRouterProtocol?
     
   
-    public func loggIn(context: NSManagedObjectContext) {
-        interactor?.requestloggIn(context: context)
+    public func loggIn(withEmail email: String, withPassword password: String, context: NSManagedObjectContext) {
+        interactor?.requestloggIn(withEmail: email, withPassword: password, context: context)
     }
     
     public func registerUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext) {
@@ -25,18 +25,14 @@ public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     
 }
 extension EnrollmentPresenter: EnrollmentInteractorOutputProtocol {
+    
     public func resiveResponseMessage(title: String, message: String?) {
         view?.showMessage(title: title, message: message)
     }
-    
-    public func responseloggIn() {
+    public func responseloggIn(dataUser: FirebaseUserData) {
         route?.goToMainView(view: view)
     }
-    
     public func responseRegisterUser(dataUser: FirebaseUserData) {
         route?.goToMainView(view: view)
     }
-    
-    
-    
 }

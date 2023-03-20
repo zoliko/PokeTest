@@ -15,20 +15,20 @@ public protocol EnrollmentPresenterProtocol: AnyObject {
     var view:  EnrollmentViewProtocol?{get set}
     var route: EnrollmentRouterProtocol?{get set}
     
-    func loggIn(context: NSManagedObjectContext)
+    func loggIn(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
     func registerUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
 }
 // MARK: -  Protocol to interaction Presenter ---> Interactor
 public protocol EnrollmentInteractorInputProtocol: AnyObject {
     var presenter:  EnrollmentInteractorOutputProtocol? {get set}
     
-    func requestloggIn(context: NSManagedObjectContext)
+    func requestloggIn(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
     func requestRegisterUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
 }
 // MARK: -  Protocol to interaction Interactor ---> Presenter
 public protocol EnrollmentInteractorOutputProtocol: AnyObject {
     func resiveResponseMessage(title: String, message: String?)
-    func responseloggIn()
+    func responseloggIn(dataUser: FirebaseUserData)
     func responseRegisterUser(dataUser: FirebaseUserData)
 }
 // MARK: -  Protocol to interaction Presenter ---> View

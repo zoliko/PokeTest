@@ -14,4 +14,10 @@ public class DIERegisterManager {
             handler?(authResult, error)
         }
     }
+    
+    public static func logginUser(withEmail email: String, withPassword password: String, handler: ((_ data: Any?, _ error: Any?) -> Void)? ) {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            handler?(authResult, error)
+        }
+    }
 }
