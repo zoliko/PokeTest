@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3AR-yK-Kds">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enrollment View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IDEnrollmentView" id="BYZ-38-t0r" customClass="EnrollmentViewController" customModule="Main" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-up-5mS">
+                                <rect key="frame" x="34" y="198" width="346" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="346" id="2bd-3Q-v8n"/>
+                                    <constraint firstAttribute="height" constant="155" id="jh1-kw-4u2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2J-Mr-7Z0">
+                                <rect key="frame" x="254" y="0.0" width="160" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="8Fo-14-GZx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="8qZ-H0-DWn"/>
+                                    <constraint firstAttribute="height" constant="190" id="zWm-z3-yfE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="ztr-mf-450"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="reX-hI-Ngk">
+                                <rect key="frame" x="20" y="348" width="374" height="407"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="407" id="vjr-cz-3bK"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJ6-wA-Z8E" customClass="DIVCTextField" customModule="DITPVisualComponents">
+                                <rect key="frame" x="43" y="413" width="328" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erR-rz-bFw" customClass="DIVCTextField" customModule="DITPVisualComponents">
+                                <rect key="frame" x="43" y="485" width="328" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZp-24-J7k" customClass="DIVCButton" customModule="DITPVisualComponents">
+                                <rect key="frame" x="250" y="579" width="121" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="6me-Sw-fv9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="Crz-Cg-Mnr"/>
+                                    <constraint firstAttribute="height" constant="35" id="oRG-1r-U7y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing Up"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAccionRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPH-e9-QWg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-st-1Qo" customClass="DIVCButton" customModule="DITPVisualComponents">
+                                <rect key="frame" x="43" y="579" width="147" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAccionLoggin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGN-eW-bwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YIh-st-1Qo" firstAttribute="top" secondItem="erR-rz-bFw" secondAttribute="bottom" constant="60" id="0u2-68-i7R"/>
+                            <constraint firstItem="reX-hI-Ngk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Od-3f-VCi"/>
+                            <constraint firstItem="erR-rz-bFw" firstAttribute="top" secondItem="IJ6-wA-Z8E" secondAttribute="bottom" constant="38" id="6wk-wI-QtT"/>
+                            <constraint firstItem="h2J-Mr-7Z0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="855-E6-O3m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reX-hI-Ngk" secondAttribute="trailing" constant="20" id="CD0-6z-Ebt"/>
+                            <constraint firstItem="Tmh-up-5mS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="HF1-Wd-1Rq"/>
+                            <constraint firstItem="IJ6-wA-Z8E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="IDg-al-bHS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erR-rz-bFw" secondAttribute="trailing" constant="43" id="L6W-Vs-pbN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="reX-hI-Ngk" secondAttribute="bottom" constant="107" id="LBC-ar-RiT"/>
+                            <constraint firstItem="IJ6-wA-Z8E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="365" id="Leh-3h-bly"/>
+                            <constraint firstItem="Tmh-up-5mS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="MwU-UG-Sl7"/>
+                            <constraint firstItem="reX-hI-Ngk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Ti5-dc-RNH"/>
+                            <constraint firstItem="wZp-24-J7k" firstAttribute="top" secondItem="erR-rz-bFw" secondAttribute="bottom" constant="60" id="WRH-ys-ujI"/>
+                            <constraint firstItem="wZp-24-J7k" firstAttribute="leading" secondItem="YIh-st-1Qo" secondAttribute="trailing" constant="78" id="ajZ-Qa-uVB"/>
+                            <constraint firstItem="erR-rz-bFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="ifx-NY-Nl3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tmh-up-5mS" secondAttribute="trailing" constant="34" id="jfo-Ef-DI8"/>
+                            <constraint firstItem="YIh-st-1Qo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="mBT-yy-QXo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IJ6-wA-Z8E" secondAttribute="trailing" constant="43" id="qN1-FQ-oap"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wZp-24-J7k" secondAttribute="trailing" constant="43" id="tVE-UP-VtA"/>
+                            <constraint firstItem="h2J-Mr-7Z0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zI0-d4-G8v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KQt-tr-Ft7"/>
+                    <connections>
+                        <outlet property="inputPass" destination="erR-rz-bFw" id="ZEW-Gs-sLl"/>
+                        <outlet property="inputUser" destination="IJ6-wA-Z8E" id="t3j-AU-M8b"/>
+                        <outlet property="logo" destination="Tmh-up-5mS" id="XYL-ka-IGn"/>
+                        <outlet property="pokeball" destination="reX-hI-Ngk" id="jra-dG-ede"/>
+                        <outlet property="pokeballRotate" destination="h2J-Mr-7Z0" id="Lq9-Yg-Zii"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.62318840579712" y="-56.25"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="KZF-FG-J5k">
+            <objects>
+                <viewController storyboardIdentifier="IDMainView" id="7On-PC-RXz" customClass="MainViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfR-Og-O6y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SCq-IH-lGl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nL4-mW-KKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ELd-Re-fOJ">
+            <objects>
+                <viewController id="3AR-yK-Kds" customClass="ViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmw-rL-6Tm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIVCLogoPokeball" translatesAutoresizingMaskIntoConstraints="NO" id="1y1-ev-wQH">
+                                <rect key="frame" x="77" y="318" width="260" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="1hi-GN-g5D"/>
+                                    <constraint firstAttribute="height" constant="260" id="kub-OQ-f5F"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bfL-C8-fMz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1y1-ev-wQH" firstAttribute="top" secondItem="bfL-C8-fMz" secondAttribute="top" constant="270" id="6nh-R5-Dcm"/>
+                            <constraint firstItem="1y1-ev-wQH" firstAttribute="leading" secondItem="bfL-C8-fMz" secondAttribute="leading" constant="77" id="Lc8-NF-WBJ"/>
+                            <constraint firstItem="bfL-C8-fMz" firstAttribute="trailing" secondItem="1y1-ev-wQH" secondAttribute="trailing" constant="77" id="Lhm-9V-sV5"/>
+                            <constraint firstItem="bfL-C8-fMz" firstAttribute="bottom" secondItem="1y1-ev-wQH" secondAttribute="bottom" constant="284" id="mOf-qe-hwS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoBall" destination="1y1-ev-wQH" id="A1P-vq-5HN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4v-i1-XOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="-56"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="IJ6-wA-Z8E">
+            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+        </designable>
+        <designable name="YIh-st-1Qo">
+            <size key="intrinsicContentSize" width="76" height="34.5"/>
+        </designable>
+        <designable name="erR-rz-bFw">
+            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="DIVCLogoPokeball" width="258" height="260"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
