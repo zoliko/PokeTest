@@ -34,6 +34,9 @@
 		02E317C229C7F0C5009BF903 /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B929C7F0C5009BF903 /* MainViewProtocols.swift */; };
 		02E317C329C7F0C5009BF903 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */; };
 		02E317C429C7F0C5009BF903 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */; };
+		02E317E029C820EA009BF903 /* DITPEnrollment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */; };
+		02E317E229C820EF009BF903 /* DITPExternalConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; };
+		02E317E329C820EF009BF903 /* DITPExternalConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				02E317E329C820EF009BF903 /* DITPExternalConnection.framework in Embed Frameworks */,
 				023B093729C6EFCD006B7D1E /* DITPFunctionalities.framework in Embed Frameworks */,
 				02E3179429C7AEA9009BF903 /* DITPEnrollment.framework in Embed Frameworks */,
 				023B093A29C6EFCE006B7D1E /* DITPVisualComponents.framework in Embed Frameworks */,
@@ -79,6 +83,7 @@
 		02E317B929C7F0C5009BF903 /* MainViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
 		02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
 		02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
+		02E317E129C820EF009BF903 /* DITPExternalConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPExternalConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +92,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				023B093629C6EFCD006B7D1E /* DITPFunctionalities.framework in Frameworks */,
+				02E317E029C820EA009BF903 /* DITPEnrollment.framework in Frameworks */,
 				02E3179329C7AEA9009BF903 /* DITPEnrollment.framework in Frameworks */,
 				023B093929C6EFCE006B7D1E /* DITPVisualComponents.framework in Frameworks */,
+				02E317E229C820EF009BF903 /* DITPExternalConnection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +105,7 @@
 		023B092E29C6EEE5006B7D1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02E317E129C820EF009BF903 /* DITPExternalConnection.framework */,
 				02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */,
 				023B092F29C6EEE5006B7D1E /* DITPFunctionalities.framework */,
 				023B093029C6EEE5006B7D1E /* DITPVisualComponents.framework */,
