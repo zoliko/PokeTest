@@ -8,6 +8,7 @@
 import UIKit
 public class EnrollmentRouter: EnrollmentRouterProtocol {
     
+    
     public static func createModule() -> UIViewController {
         guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IDEnrollmentView") as? EnrollmentViewController
         else {
@@ -22,6 +23,13 @@ public class EnrollmentRouter: EnrollmentRouterProtocol {
         view.presenter?.interactor?.presenter = presenter
         return view
         
+    }
+    
+    public func goToMainView(view: EnrollmentViewProtocol?) {
+        if let view = view as? EnrollmentViewController {
+            let vc = MainViewRouter.createModule()
+            view.present(vc, animated: true)
+        }
     }
 }
 

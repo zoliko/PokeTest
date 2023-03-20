@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         if !DIELoginManager.isLoggin() {
             self.present(EnrollmentRouter.createModule(), animated: true)
         } else {
-            
+            self.present(MainViewRouter.createModule(), animated: true)
         }
     }
 }

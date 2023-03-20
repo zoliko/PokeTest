@@ -27,6 +27,13 @@
 		02E3177A29C7424F009BF903 /* EnrollmentViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3177929C7424F009BF903 /* EnrollmentViewControllerExtension.swift */; };
 		02E3179329C7AEA9009BF903 /* DITPEnrollment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */; };
 		02E3179429C7AEA9009BF903 /* DITPEnrollment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02E317BE29C7F0C5009BF903 /* MainViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B229C7F0C5009BF903 /* MainViewEntity.swift */; };
+		02E317BF29C7F0C5009BF903 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B429C7F0C5009BF903 /* MainViewPresenter.swift */; };
+		02E317C029C7F0C5009BF903 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B629C7F0C5009BF903 /* MainViewController.swift */; };
+		02E317C129C7F0C5009BF903 /* MainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B729C7F0C5009BF903 /* MainViewControllerExtension.swift */; };
+		02E317C229C7F0C5009BF903 /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317B929C7F0C5009BF903 /* MainViewProtocols.swift */; };
+		02E317C329C7F0C5009BF903 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */; };
+		02E317C429C7F0C5009BF903 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +72,13 @@
 		02E3177729C73EF8009BF903 /* EnrollmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentRouter.swift; sourceTree = "<group>"; };
 		02E3177929C7424F009BF903 /* EnrollmentViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentViewControllerExtension.swift; sourceTree = "<group>"; };
 		02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPEnrollment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E317B229C7F0C5009BF903 /* MainViewEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewEntity.swift; sourceTree = "<group>"; };
+		02E317B429C7F0C5009BF903 /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		02E317B629C7F0C5009BF903 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		02E317B729C7F0C5009BF903 /* MainViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerExtension.swift; sourceTree = "<group>"; };
+		02E317B929C7F0C5009BF903 /* MainViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
+		02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,7 @@
 				02789F6829C6E708005AC18B /* LaunchScreen.storyboard */,
 				02789F5E29C6E707005AC18B /* ViewController.swift */,
 				02E3176629C73817009BF903 /* Enrollment */,
+				02E317B029C7F0C5009BF903 /* MainView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +209,68 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		02E317B029C7F0C5009BF903 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				02E317B829C7F0C5009BF903 /* Protocols */,
+				02E317B529C7F0C5009BF903 /* View */,
+				02E317BA29C7F0C5009BF903 /* Interactor */,
+				02E317B329C7F0C5009BF903 /* Presenter */,
+				02E317B129C7F0C5009BF903 /* Entity */,
+				02E317BC29C7F0C5009BF903 /* Router */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		02E317B129C7F0C5009BF903 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				02E317B229C7F0C5009BF903 /* MainViewEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		02E317B329C7F0C5009BF903 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				02E317B429C7F0C5009BF903 /* MainViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		02E317B529C7F0C5009BF903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E317B629C7F0C5009BF903 /* MainViewController.swift */,
+				02E317B729C7F0C5009BF903 /* MainViewControllerExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02E317B829C7F0C5009BF903 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				02E317B929C7F0C5009BF903 /* MainViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		02E317BA29C7F0C5009BF903 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		02E317BC29C7F0C5009BF903 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,14 +346,21 @@
 				02E3177829C73EF8009BF903 /* EnrollmentRouter.swift in Sources */,
 				02E3177629C73EEB009BF903 /* EnrollmentEntity.swift in Sources */,
 				02789F5F29C6E707005AC18B /* ViewController.swift in Sources */,
+				02E317C129C7F0C5009BF903 /* MainViewControllerExtension.swift in Sources */,
+				02E317C429C7F0C5009BF903 /* MainViewRouter.swift in Sources */,
 				02789F5B29C6E707005AC18B /* AppDelegate.swift in Sources */,
 				02789F6529C6E707005AC18B /* Main.xcdatamodeld in Sources */,
 				02E3177029C73DAF009BF903 /* EnrollmentProtocols.swift in Sources */,
+				02E317C229C7F0C5009BF903 /* MainViewProtocols.swift in Sources */,
 				02E3177429C73EDF009BF903 /* EnrollmentPresenter.swift in Sources */,
+				02E317C029C7F0C5009BF903 /* MainViewController.swift in Sources */,
 				02789F5D29C6E707005AC18B /* SceneDelegate.swift in Sources */,
+				02E317BF29C7F0C5009BF903 /* MainViewPresenter.swift in Sources */,
+				02E317BE29C7F0C5009BF903 /* MainViewEntity.swift in Sources */,
 				02E3177229C73ED4009BF903 /* EnrollmentInteractor.swift in Sources */,
 				02E3177A29C7424F009BF903 /* EnrollmentViewControllerExtension.swift in Sources */,
 				02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */,
+				02E317C329C7F0C5009BF903 /* MainViewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

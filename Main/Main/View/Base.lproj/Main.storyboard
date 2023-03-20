@@ -109,6 +109,21 @@
             </objects>
             <point key="canvasLocation" x="853.62318840579712" y="-56.25"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="KZF-FG-J5k">
+            <objects>
+                <viewController storyboardIdentifier="IDMainView" id="7On-PC-RXz" customClass="MainViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfR-Og-O6y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SCq-IH-lGl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nL4-mW-KKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-56"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ELd-Re-fOJ">
             <objects>
@@ -127,13 +142,13 @@
     </scenes>
     <designables>
         <designable name="IJ6-wA-Z8E">
-            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="YIh-st-1Qo">
             <size key="intrinsicContentSize" width="76" height="34.5"/>
         </designable>
         <designable name="erR-rz-bFw">
-            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
     </designables>
     <resources>

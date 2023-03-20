@@ -39,8 +39,7 @@ class EnrollmentViewController: UIViewController {
 
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {
         if inputUser.isEmpy() && inputPass.isEmpy() {
-            inputUser.changeColorBorderByValidation(validationCase: .error)
-            inputPass.changeColorBorderByValidation(validationCase: .success)
+            presenter?.loggIn()
         } else {
             //inputUser.changeColorBorderByValidation(validationCase: .error)
             //inputPass.changeColorBorderByValidation(validationCase: .error)

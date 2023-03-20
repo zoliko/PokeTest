@@ -9,7 +9,6 @@ import Foundation
 
 public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     
-    
     public var interactor: EnrollmentInteractorInputProtocol?
     weak public var view: EnrollmentViewProtocol?
     public var route: EnrollmentRouterProtocol?
@@ -18,11 +17,19 @@ public class EnrollmentPresenter: EnrollmentPresenterProtocol {
         interactor?.sendRequestMessage()
     }
     
+    public func loggIn() {
+        interactor?.requestloggIn()
+    }
+    
 }
 extension EnrollmentPresenter: EnrollmentInteractorOutputProtocol {
+    
     public func resiveResponseMessage() {
         view?.showMessage(message: "hola")
     }
     
+    public func responseloggIn() {
+        route?.goToMainView(view: view)
+    }
     
 }

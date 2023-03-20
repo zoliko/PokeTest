@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import DITPEnrollment
 
 public class EnrollmentInteractor: EnrollmentInteractorInputProtocol {
+    
     public var presenter: EnrollmentInteractorOutputProtocol?
     public func sendRequestMessage() {
         presenter?.resiveResponseMessage()
+    }
+    public func requestloggIn() {
+        DIELoginManager.loggIn()
+        presenter?.responseloggIn()
     }
 }
