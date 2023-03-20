@@ -59,13 +59,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-st-1Qo">
+                                <rect key="frame" x="122" y="585" width="171" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonAccionLoggin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGN-eW-bwh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YIh-st-1Qo" firstAttribute="top" secondItem="erR-rz-bFw" secondAttribute="bottom" constant="66" id="0u2-68-i7R"/>
                             <constraint firstItem="reX-hI-Ngk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Od-3f-VCi"/>
                             <constraint firstItem="erR-rz-bFw" firstAttribute="top" secondItem="IJ6-wA-Z8E" secondAttribute="bottom" constant="38" id="6wk-wI-QtT"/>
                             <constraint firstItem="h2J-Mr-7Z0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="855-E6-O3m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIh-st-1Qo" secondAttribute="trailing" constant="121" id="ASN-8l-BRl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reX-hI-Ngk" secondAttribute="trailing" constant="20" id="CD0-6z-Ebt"/>
                             <constraint firstItem="Tmh-up-5mS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="HF1-Wd-1Rq"/>
                             <constraint firstItem="IJ6-wA-Z8E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="IDg-al-bHS"/>
@@ -76,12 +86,15 @@
                             <constraint firstItem="reX-hI-Ngk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Ti5-dc-RNH"/>
                             <constraint firstItem="erR-rz-bFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="ifx-NY-Nl3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tmh-up-5mS" secondAttribute="trailing" constant="34" id="jfo-Ef-DI8"/>
+                            <constraint firstItem="YIh-st-1Qo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="mBT-yy-QXo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IJ6-wA-Z8E" secondAttribute="trailing" constant="43" id="qN1-FQ-oap"/>
                             <constraint firstItem="h2J-Mr-7Z0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zI0-d4-G8v"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KQt-tr-Ft7"/>
                     <connections>
+                        <outlet property="inputPass" destination="erR-rz-bFw" id="ZEW-Gs-sLl"/>
+                        <outlet property="inputUser" destination="IJ6-wA-Z8E" id="t3j-AU-M8b"/>
                         <outlet property="logo" destination="Tmh-up-5mS" id="XYL-ka-IGn"/>
                         <outlet property="pokeball" destination="reX-hI-Ngk" id="jra-dG-ede"/>
                         <outlet property="pokeballRotate" destination="h2J-Mr-7Z0" id="Lq9-Yg-Zii"/>

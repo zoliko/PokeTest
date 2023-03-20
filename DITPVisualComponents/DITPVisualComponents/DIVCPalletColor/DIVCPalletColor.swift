@@ -15,6 +15,9 @@ public enum DIVCPalletColor {
     case primaryYellow
     case primaryWhite
     case appClear
+    case primarySuccess
+    case primaryWarning
+    case primaryError
     
     public var color: UIColor {
         switch self {
@@ -28,6 +31,12 @@ public enum DIVCPalletColor {
             return UIColor.primaryWhite
         case .appClear:
             return UIColor.appClear
+        case .primarySuccess:
+            return UIColor.primarySuccess
+        case .primaryWarning:
+            return UIColor.primaryWarning
+        case .primaryError:
+            return UIColor.primaryError
         }
     }
 }

@@ -27,15 +27,20 @@ public extension UIColor {
         )
     }
     
+    //MARK: - Basic Validation Colors
+    
+    static var primarySuccess: UIColor { return createColorFrom(hexadecimalString: "#92E288") }
+    static var primaryWarning: UIColor { return createColorFrom(hexadecimalString: "#FFD54E") }
+    static var primaryError: UIColor { return createColorFrom(hexadecimalString: "#EA0000") }
+    
     //MARK: - Basic Pallet Colors
+    static var primaryWhite: UIColor { return UIColor.white }
+    static var appClear: UIColor { return UIColor.clear }
     
-    public static var primaryWhite: UIColor { return UIColor.white }
-    public static var appClear: UIColor { return UIColor.clear }
+    static var primaryBlue: UIColor { return createColorFrom(hexadecimalString: "#5C98DB") }
+    static var secondaryBlue: UIColor { return createColorFrom(hexadecimalString: "#0E437E") }
     
-    public static var primaryBlue: UIColor { return createColorFrom(hexadecimalString: "#5C98DB") }
-    public static var secondaryBlue: UIColor { return createColorFrom(hexadecimalString: "#0E437E") }
-    
-    public static var primaryYellow: UIColor { return createColorFrom(hexadecimalString: "#F9C623") }
+    static var primaryYellow: UIColor { return createColorFrom(hexadecimalString: "#F9C623") }
     
     //MARK: - Font Colors
 }

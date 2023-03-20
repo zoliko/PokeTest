@@ -17,6 +17,10 @@
 		02E3179729C7B248009BF903 /* DIVCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179629C7B248009BF903 /* DIVCTextField.swift */; };
 		02E3179929C7B374009BF903 /* DIVCTextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */; };
 		02E3179C29C7B5E1009BF903 /* DIVCTextFieldConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179B29C7B5E1009BF903 /* DIVCTextFieldConfigurationModel.swift */; };
+		02E3179E29C7D030009BF903 /* DIVCTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179D29C7D030009BF903 /* DIVCTextFieldExtension.swift */; };
+		02E317A329C7D489009BF903 /* DIVCTextFieldValidationsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317A229C7D488009BF903 /* DIVCTextFieldValidationsExtension.swift */; };
+		02E317A529C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317A429C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift */; };
+		02E317A829C7D802009BF903 /* DIVCValidationCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317A729C7D802009BF903 /* DIVCValidationCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		02E3179629C7B248009BF903 /* DIVCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextField.swift; sourceTree = "<group>"; };
 		02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldStyles.swift; sourceTree = "<group>"; };
 		02E3179B29C7B5E1009BF903 /* DIVCTextFieldConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldConfigurationModel.swift; sourceTree = "<group>"; };
+		02E3179D29C7D030009BF903 /* DIVCTextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldExtension.swift; sourceTree = "<group>"; };
+		02E317A229C7D488009BF903 /* DIVCTextFieldValidationsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldValidationsExtension.swift; sourceTree = "<group>"; };
+		02E317A429C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCTextFieldValidationsEfectsExtension.swift; sourceTree = "<group>"; };
+		02E317A729C7D802009BF903 /* DIVCValidationCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCValidationCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				023B093B29C6F641006B7D1E /* assets.xcassets */,
+				02E317A629C7D7F9009BF903 /* DIVCValidationCase */,
 				02E3179529C7B22C009BF903 /* DIVCTextField */,
 				023B094729C714DE006B7D1E /* DIVCFunctionalities */,
 				023B094029C6FB66006B7D1E /* DIVCVisualEfects */,
@@ -110,11 +119,22 @@
 		02E3179529C7B22C009BF903 /* DIVCTextField */ = {
 			isa = PBXGroup;
 			children = (
-				02E3179629C7B248009BF903 /* DIVCTextField.swift */,
 				02E3179829C7B374009BF903 /* DIVCTextFieldStyles.swift */,
 				02E3179B29C7B5E1009BF903 /* DIVCTextFieldConfigurationModel.swift */,
+				02E3179629C7B248009BF903 /* DIVCTextField.swift */,
+				02E3179D29C7D030009BF903 /* DIVCTextFieldExtension.swift */,
+				02E317A229C7D488009BF903 /* DIVCTextFieldValidationsExtension.swift */,
+				02E317A429C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift */,
 			);
 			path = DIVCTextField;
+			sourceTree = "<group>";
+		};
+		02E317A629C7D7F9009BF903 /* DIVCValidationCase */ = {
+			isa = PBXGroup;
+			children = (
+				02E317A729C7D802009BF903 /* DIVCValidationCase.swift */,
+			);
+			path = DIVCValidationCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +220,13 @@
 			files = (
 				02E3179C29C7B5E1009BF903 /* DIVCTextFieldConfigurationModel.swift in Sources */,
 				023B094629C700D9006B7D1E /* DIVCVisualEfects.swift in Sources */,
+				02E317A329C7D489009BF903 /* DIVCTextFieldValidationsExtension.swift in Sources */,
+				02E317A529C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift in Sources */,
 				023B093F29C6F7AA006B7D1E /* DIVCFrameWorkConfiguration.swift in Sources */,
 				023B094229C6FBC8006B7D1E /* DIVCGradientColorEfect.swift in Sources */,
+				02E3179E29C7D030009BF903 /* DIVCTextFieldExtension.swift in Sources */,
 				023B092829C6EB53006B7D1E /* DIVCPalletColor.swift in Sources */,
+				02E317A829C7D802009BF903 /* DIVCValidationCase.swift in Sources */,
 				023B092A29C6EC3C006B7D1E /* UIColorExtension.swift in Sources */,
 				02E3179929C7B374009BF903 /* DIVCTextFieldStyles.swift in Sources */,
 				02E3179729C7B248009BF903 /* DIVCTextField.swift in Sources */,

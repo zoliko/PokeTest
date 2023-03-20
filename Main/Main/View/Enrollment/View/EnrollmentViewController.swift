@@ -7,14 +7,18 @@
 
 import UIKit
 import DITPVisualComponents
+import DITPFunctionalities
 
 class EnrollmentViewController: UIViewController {
 
+    var presenter: EnrollmentPresenterProtocol?
+    
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var pokeballRotate: UIImageView!
     @IBOutlet weak var pokeball: UIImageView!
+    @IBOutlet weak var inputUser: DIVCTextField!
+    @IBOutlet weak var inputPass: DIVCTextField!
     
-    var presenter: EnrollmentPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,19 @@ class EnrollmentViewController: UIViewController {
         pokeballRotate.image = UIImage(named: "DIVCShadowballrotate", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
         logo.image = UIImage(named: "DIVCLogo", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
         pokeball.image = UIImage(named: "DIVCShadowball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)?.withTintColor(.primaryWhite.withAlphaComponent(0.05), renderingMode: .alwaysOriginal)
+        
+        inputUser.placeHolderTextField = "Usuario"
+        inputPass.placeHolderTextField = "Contraseña"
+    
     }
 
+    @IBAction func buttonAccionLoggin(_ sender: UIButton) {
+        if inputUser.isEmpy() && inputPass.isEmpy() {
+            inputUser.changeColorBorderByValidation(validationCase: .error)
+            inputPass.changeColorBorderByValidation(validationCase: .success)
+        } else {
+            //inputUser.changeColorBorderByValidation(validationCase: .error)
+            //inputPass.changeColorBorderByValidation(validationCase: .error)
+        }
+    }
 }
