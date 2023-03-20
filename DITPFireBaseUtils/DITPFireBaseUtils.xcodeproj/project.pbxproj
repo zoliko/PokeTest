@@ -7,137 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E3178929C7A93C009BF903 /* DITPEnrollment.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E3178829C7A93C009BF903 /* DITPEnrollment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02E3179129C7A98D009BF903 /* DIELoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179029C7A98D009BF903 /* DIELoginManager.swift */; };
-		02FB538D29C86AF50030A821 /* DIERegisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB538C29C86AF50030A821 /* DIERegisterManager.swift */; };
-		02FB539429C870A30030A821 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 02FB539329C870A30030A821 /* FirebaseAnalytics */; };
-		02FB539629C870A30030A821 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02FB539529C870A30030A821 /* FirebaseAuth */; };
+		02FB537B29C869820030A821 /* DITPFireBaseUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FB537A29C869820030A821 /* DITPFireBaseUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FB538329C86A4B0030A821 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 02FB538229C86A4B0030A821 /* FirebaseAnalytics */; };
+		02FB538529C86A4B0030A821 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02FB538429C86A4B0030A821 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02E3178529C7A93C009BF903 /* DITPEnrollment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPEnrollment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E3178829C7A93C009BF903 /* DITPEnrollment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPEnrollment.h; sourceTree = "<group>"; };
-		02E3179029C7A98D009BF903 /* DIELoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIELoginManager.swift; sourceTree = "<group>"; };
-		02FB538729C86A8A0030A821 /* DITPFireBaseUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPFireBaseUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02FB538C29C86AF50030A821 /* DIERegisterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIERegisterManager.swift; sourceTree = "<group>"; };
+		02FB537729C869820030A821 /* DITPFireBaseUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPFireBaseUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FB537A29C869820030A821 /* DITPFireBaseUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPFireBaseUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02E3178229C7A93C009BF903 /* Frameworks */ = {
+		02FB537429C869820030A821 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FB539429C870A30030A821 /* FirebaseAnalytics in Frameworks */,
-				02FB539629C870A30030A821 /* FirebaseAuth in Frameworks */,
+				02FB538329C86A4B0030A821 /* FirebaseAnalytics in Frameworks */,
+				02FB538529C86A4B0030A821 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02E3177B29C7A93C009BF903 = {
+		02FB536D29C869820030A821 = {
 			isa = PBXGroup;
 			children = (
-				02E3178729C7A93C009BF903 /* DITPEnrollment */,
-				02E3178629C7A93C009BF903 /* Products */,
-				02FB538629C86A8A0030A821 /* Frameworks */,
+				02FB537929C869820030A821 /* DITPFireBaseUtils */,
+				02FB537829C869820030A821 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02E3178629C7A93C009BF903 /* Products */ = {
+		02FB537829C869820030A821 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02E3178529C7A93C009BF903 /* DITPEnrollment.framework */,
+				02FB537729C869820030A821 /* DITPFireBaseUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02E3178729C7A93C009BF903 /* DITPEnrollment */ = {
+		02FB537929C869820030A821 /* DITPFireBaseUtils */ = {
 			isa = PBXGroup;
 			children = (
-				02FB538B29C86ADC0030A821 /* DIERegisterManager */,
-				02E3178F29C7A94D009BF903 /* DIELoginManager */,
-				02E3178829C7A93C009BF903 /* DITPEnrollment.h */,
+				02FB537A29C869820030A821 /* DITPFireBaseUtils.h */,
 			);
-			path = DITPEnrollment;
-			sourceTree = "<group>";
-		};
-		02E3178F29C7A94D009BF903 /* DIELoginManager */ = {
-			isa = PBXGroup;
-			children = (
-				02E3179029C7A98D009BF903 /* DIELoginManager.swift */,
-			);
-			path = DIELoginManager;
-			sourceTree = "<group>";
-		};
-		02FB538629C86A8A0030A821 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				02FB538729C86A8A0030A821 /* DITPFireBaseUtils.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		02FB538B29C86ADC0030A821 /* DIERegisterManager */ = {
-			isa = PBXGroup;
-			children = (
-				02FB538C29C86AF50030A821 /* DIERegisterManager.swift */,
-			);
-			path = DIERegisterManager;
+			path = DITPFireBaseUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02E3178029C7A93C009BF903 /* Headers */ = {
+		02FB537229C869820030A821 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E3178929C7A93C009BF903 /* DITPEnrollment.h in Headers */,
+				02FB537B29C869820030A821 /* DITPFireBaseUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02E3178429C7A93C009BF903 /* DITPEnrollment */ = {
+		02FB537629C869820030A821 /* DITPFireBaseUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E3178C29C7A93C009BF903 /* Build configuration list for PBXNativeTarget "DITPEnrollment" */;
+			buildConfigurationList = 02FB537E29C869820030A821 /* Build configuration list for PBXNativeTarget "DITPFireBaseUtils" */;
 			buildPhases = (
-				02E3178029C7A93C009BF903 /* Headers */,
-				02E3178129C7A93C009BF903 /* Sources */,
-				02E3178229C7A93C009BF903 /* Frameworks */,
-				02E3178329C7A93C009BF903 /* Resources */,
+				02FB537229C869820030A821 /* Headers */,
+				02FB537329C869820030A821 /* Sources */,
+				02FB537429C869820030A821 /* Frameworks */,
+				02FB537529C869820030A821 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DITPEnrollment;
+			name = DITPFireBaseUtils;
 			packageProductDependencies = (
-				02FB539329C870A30030A821 /* FirebaseAnalytics */,
-				02FB539529C870A30030A821 /* FirebaseAuth */,
+				02FB538229C86A4B0030A821 /* FirebaseAnalytics */,
+				02FB538429C86A4B0030A821 /* FirebaseAuth */,
 			);
-			productName = DITPEnrollment;
-			productReference = 02E3178529C7A93C009BF903 /* DITPEnrollment.framework */;
+			productName = DITPFireBaseUtils;
+			productReference = 02FB537729C869820030A821 /* DITPFireBaseUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02E3177C29C7A93C009BF903 /* Project object */ = {
+		02FB536E29C869820030A821 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					02E3178429C7A93C009BF903 = {
+					02FB537629C869820030A821 = {
 						CreatedOnToolsVersion = 14.1;
-						LastSwiftMigration = 1410;
 					};
 				};
 			};
-			buildConfigurationList = 02E3177F29C7A93C009BF903 /* Build configuration list for PBXProject "DITPEnrollment" */;
+			buildConfigurationList = 02FB537129C869820030A821 /* Build configuration list for PBXProject "DITPFireBaseUtils" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,21 +112,21 @@
 				en,
 				Base,
 			);
-			mainGroup = 02E3177B29C7A93C009BF903;
+			mainGroup = 02FB536D29C869820030A821;
 			packageReferences = (
-				02FB539229C870A30030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				02FB538129C86A4B0030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 02E3178629C7A93C009BF903 /* Products */;
+			productRefGroup = 02FB537829C869820030A821 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02E3178429C7A93C009BF903 /* DITPEnrollment */,
+				02FB537629C869820030A821 /* DITPFireBaseUtils */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02E3178329C7A93C009BF903 /* Resources */ = {
+		02FB537529C869820030A821 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,19 +136,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02E3178129C7A93C009BF903 /* Sources */ = {
+		02FB537329C869820030A821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E3179129C7A98D009BF903 /* DIELoginManager.swift in Sources */,
-				02FB538D29C86AF50030A821 /* DIERegisterManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		02E3178A29C7A93C009BF903 /* Debug */ = {
+		02FB537C29C869820030A821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		02E3178B29C7A93C009BF903 /* Release */ = {
+		02FB537D29C869820030A821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,10 +266,9 @@
 			};
 			name = Release;
 		};
-		02E3178D29C7A93C009BF903 /* Debug */ = {
+		02FB537F29C869820030A821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -315,30 +279,24 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPEnrollment;
+				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPFireBaseUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		02E3178E29C7A93C009BF903 /* Release */ = {
+		02FB538029C869820030A821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -349,19 +307,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPEnrollment;
+				PRODUCT_BUNDLE_IDENTIFIER = DEV.IDEA.MUSHU.DITPFireBaseUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,20 +325,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02E3177F29C7A93C009BF903 /* Build configuration list for PBXProject "DITPEnrollment" */ = {
+		02FB537129C869820030A821 /* Build configuration list for PBXProject "DITPFireBaseUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E3178A29C7A93C009BF903 /* Debug */,
-				02E3178B29C7A93C009BF903 /* Release */,
+				02FB537C29C869820030A821 /* Debug */,
+				02FB537D29C869820030A821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02E3178C29C7A93C009BF903 /* Build configuration list for PBXNativeTarget "DITPEnrollment" */ = {
+		02FB537E29C869820030A821 /* Build configuration list for PBXNativeTarget "DITPFireBaseUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E3178D29C7A93C009BF903 /* Debug */,
-				02E3178E29C7A93C009BF903 /* Release */,
+				02FB537F29C869820030A821 /* Debug */,
+				02FB538029C869820030A821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -392,7 +346,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		02FB539229C870A30030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		02FB538129C86A4B0030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -403,17 +357,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		02FB539329C870A30030A821 /* FirebaseAnalytics */ = {
+		02FB538229C86A4B0030A821 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02FB539229C870A30030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 02FB538129C86A4B0030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		02FB539529C870A30030A821 /* FirebaseAuth */ = {
+		02FB538429C86A4B0030A821 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02FB539229C870A30030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 02FB538129C86A4B0030A821 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 02E3177C29C7A93C009BF903 /* Project object */;
+	rootObject = 02FB536E29C869820030A821 /* Project object */;
 }

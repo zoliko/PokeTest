@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1014216511040-h4vtat1c25p0mp1bdc54dhc1s18rom04.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1014216511040-h4vtat1c25p0mp1bdc54dhc1s18rom04</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGcrwPLlzvrtO6zTX41ikYONumP5B3IEU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1014216511040</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>DEV.IDEA.MUSHU.Main</string>
+	<key>PROJECT_ID</key>
+	<string>xcaretpoketest</string>
+	<key>STORAGE_BUCKET</key>
+	<string>xcaretpoketest.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1014216511040:ios:280d40257278dccc95d9a5</string>
+</dict>
+</plist>

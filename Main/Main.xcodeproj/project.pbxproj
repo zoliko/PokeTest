@@ -38,6 +38,7 @@
 		02E317E229C820EF009BF903 /* DITPExternalConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; };
 		02E317E329C820EF009BF903 /* DITPExternalConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02E317E829C83835009BF903 /* MainViewInteractorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */; };
+		02FB539129C86EC40030A821 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FB539029C86EC40030A821 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
 		02E317E129C820EF009BF903 /* DITPExternalConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPExternalConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractorExtension.swift; sourceTree = "<group>"; };
+		02FB539029C86EC40030A821 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				023B094929C7152F006B7D1E /* View */,
 				02789F6629C6E708005AC18B /* Assets.xcassets */,
 				02789F6B29C6E708005AC18B /* Info.plist */,
+				02FB539029C86EC40030A821 /* GoogleService-Info.plist */,
 				02789F6329C6E707005AC18B /* Main.xcdatamodeld */,
 			);
 			path = Main;
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02789F6A29C6E708005AC18B /* LaunchScreen.storyboard in Resources */,
+				02FB539129C86EC40030A821 /* GoogleService-Info.plist in Resources */,
 				02789F6729C6E708005AC18B /* Assets.xcassets in Resources */,
 				02789F6229C6E707005AC18B /* Main.storyboard in Resources */,
 			);

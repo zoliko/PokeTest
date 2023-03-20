@@ -8,7 +8,7 @@
 import Foundation
 
 extension EnrollmentViewController: EnrollmentViewProtocol {
-    func showMessage(message: String) {
+    func showMessage(message: String?) {
         print(message)
     }
     

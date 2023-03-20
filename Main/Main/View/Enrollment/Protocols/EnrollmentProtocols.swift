@@ -14,24 +14,25 @@ public protocol EnrollmentPresenterProtocol: AnyObject {
     var view:  EnrollmentViewProtocol?{get set}
     var route: EnrollmentRouterProtocol?{get set}
     
-    func viperDidLoad()
     func loggIn()
+    func registerUser(withEmail email: String, withPassword password: String)
 }
 // MARK: -  Protocol to interaction Presenter ---> Interactor
 public protocol EnrollmentInteractorInputProtocol: AnyObject {
     var presenter:  EnrollmentInteractorOutputProtocol? {get set}
     
-    func sendRequestMessage()
     func requestloggIn()
+    func requestRegisterUser(withEmail email: String, withPassword password: String)
 }
 // MARK: -  Protocol to interaction Interactor ---> Presenter
 public protocol EnrollmentInteractorOutputProtocol: AnyObject {
-    func resiveResponseMessage()
+    func resiveResponseMessage(message: String?)
     func responseloggIn()
+    func responseRegisterUser(dataUser: FirebaseUserData)
 }
 // MARK: -  Protocol to interaction Presenter ---> View
 public protocol EnrollmentViewProtocol: AnyObject {
-    func showMessage(message: String)
+    func showMessage(message: String?)
 }
 // MARK: -  Protocol to Routing
 public protocol EnrollmentRouterProtocol: AnyObject {

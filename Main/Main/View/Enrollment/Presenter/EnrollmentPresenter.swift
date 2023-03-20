@@ -13,23 +13,30 @@ public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     weak public var view: EnrollmentViewProtocol?
     public var route: EnrollmentRouterProtocol?
     
-    public func viperDidLoad() {
-        interactor?.sendRequestMessage()
-    }
-    
+  
     public func loggIn() {
         interactor?.requestloggIn()
+    }
+    
+    public func registerUser(withEmail email: String, withPassword password: String) {
+        interactor?.requestRegisterUser(withEmail: email, withPassword: password)
     }
     
 }
 extension EnrollmentPresenter: EnrollmentInteractorOutputProtocol {
     
-    public func resiveResponseMessage() {
-        view?.showMessage(message: "hola")
+    public func resiveResponseMessage(message: String?) {
+        view?.showMessage(message: message)
     }
     
     public func responseloggIn() {
         route?.goToMainView(view: view)
     }
+    
+    public func responseRegisterUser(dataUser: FirebaseUserData) {
+        print(dataUser)
+    }
+    
+    
     
 }

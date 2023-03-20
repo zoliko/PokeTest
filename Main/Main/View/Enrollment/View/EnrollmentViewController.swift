@@ -23,7 +23,6 @@ class EnrollmentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        presenter?.viperDidLoad()
     }
     
     func setUpView() {
@@ -34,12 +33,25 @@ class EnrollmentViewController: UIViewController {
         
         inputUser.placeHolderTextField = "Usuario"
         inputPass.placeHolderTextField = "Contraseña"
+        
+        inputUser.text = "Waxelo77@gmail.com"
+        inputPass.text = "23Sauco23"
     
     }
 
+    @IBAction func buttonAccionRegister(_ sender: UIButton) {
+        if inputUser.isValidEmail() && !inputPass.isEmpy() {
+            guard let email = inputUser.text,
+                  let password = inputPass.text
+            else {
+                return
+            }
+            presenter?.registerUser(withEmail: email, withPassword: password)
+        } 
+    }
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {
         if inputUser.isEmpy() && inputPass.isEmpy() {
-            presenter?.loggIn()
+            //presenter?.loggIn()
         } else {
             //inputUser.changeColorBorderByValidation(validationCase: .error)
             //inputPass.changeColorBorderByValidation(validationCase: .error)
