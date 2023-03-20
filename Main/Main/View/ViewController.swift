@@ -10,21 +10,17 @@ import DITPVisualComponents
 import DITPEnrollment
 
 class ViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         vericateLoggin()
     }
-    
     func setUpView() {
         view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
     }
-    
     func vericateLoggin() {
         if !DIELoginManager.isLoggin() {
             self.present(EnrollmentRouter.createModule(), animated: true)

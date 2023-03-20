@@ -8,9 +8,9 @@
 import Foundation
 
 extension EnrollmentViewController: EnrollmentViewProtocol {
-    func showMessage(message: String?) {
-        print(message)
+    func showMessage(title: String, message: String?) {
+        showAlertMessage(title: title, message: message ?? "")
     }
     
-    
+   
 }

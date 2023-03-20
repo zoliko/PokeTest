@@ -42,11 +42,13 @@ class EnrollmentViewController: UIViewController {
     @IBAction func buttonAccionRegister(_ sender: UIButton) {
         if inputUser.isValidEmail() && !inputPass.isEmpy() {
             guard let email = inputUser.text,
-                  let password = inputPass.text
+                  let password = inputPass.text,
+                  let context = self.getCoreDataContext()
             else {
                 return
             }
-            presenter?.registerUser(withEmail: email, withPassword: password)
+            
+            presenter?.registerUser(withEmail: email, withPassword: password, context: context)
         } 
     }
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {

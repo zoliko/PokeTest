@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 // MARK: -  Protocol to interaction View ---> Presenter
 public protocol EnrollmentPresenterProtocol: AnyObject {
@@ -14,25 +15,25 @@ public protocol EnrollmentPresenterProtocol: AnyObject {
     var view:  EnrollmentViewProtocol?{get set}
     var route: EnrollmentRouterProtocol?{get set}
     
-    func loggIn()
-    func registerUser(withEmail email: String, withPassword password: String)
+    func loggIn(context: NSManagedObjectContext)
+    func registerUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
 }
 // MARK: -  Protocol to interaction Presenter ---> Interactor
 public protocol EnrollmentInteractorInputProtocol: AnyObject {
     var presenter:  EnrollmentInteractorOutputProtocol? {get set}
     
-    func requestloggIn()
-    func requestRegisterUser(withEmail email: String, withPassword password: String)
+    func requestloggIn(context: NSManagedObjectContext)
+    func requestRegisterUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext)
 }
 // MARK: -  Protocol to interaction Interactor ---> Presenter
 public protocol EnrollmentInteractorOutputProtocol: AnyObject {
-    func resiveResponseMessage(message: String?)
+    func resiveResponseMessage(title: String, message: String?)
     func responseloggIn()
     func responseRegisterUser(dataUser: FirebaseUserData)
 }
 // MARK: -  Protocol to interaction Presenter ---> View
 public protocol EnrollmentViewProtocol: AnyObject {
-    func showMessage(message: String?)
+    func showMessage(title: String, message: String?)
 }
 // MARK: -  Protocol to Routing
 public protocol EnrollmentRouterProtocol: AnyObject {

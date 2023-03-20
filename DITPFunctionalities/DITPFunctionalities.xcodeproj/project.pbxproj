@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */; };
 		02789F7F29C6E755005AC18B /* DITPFunctionalities.h in Headers */ = {isa = PBXBuildFile; fileRef = 02789F7E29C6E755005AC18B /* DITPFunctionalities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FB539929C886ED0030A821 /* DIFAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB539829C886ED0030A821 /* DIFAlertMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFDensityPixel.swift; sourceTree = "<group>"; };
 		02789F7B29C6E755005AC18B /* DITPFunctionalities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPFunctionalities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02789F7E29C6E755005AC18B /* DITPFunctionalities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPFunctionalities.h; sourceTree = "<group>"; };
+		02FB539829C886ED0030A821 /* DIFAlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFAlertMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,19 @@
 		02789F7D29C6E755005AC18B /* DITPFunctionalities */ = {
 			isa = PBXGroup;
 			children = (
+				02FB539729C886AF0030A821 /* DIFAlertMessage */,
 				023B092D29C6EDBD006B7D1E /* DIFDensityPixel */,
 				02789F7E29C6E755005AC18B /* DITPFunctionalities.h */,
 			);
 			path = DITPFunctionalities;
+			sourceTree = "<group>";
+		};
+		02FB539729C886AF0030A821 /* DIFAlertMessage */ = {
+			isa = PBXGroup;
+			children = (
+				02FB539829C886ED0030A821 /* DIFAlertMessage.swift */,
+			);
+			path = DIFAlertMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FB539929C886ED0030A821 /* DIFAlertMessage.swift in Sources */,
 				023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

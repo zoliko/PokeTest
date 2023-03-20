@@ -14,6 +14,7 @@
 		02E317E629C82352009BF903 /* DIECFrameWorkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317E529C82352009BF903 /* DIECFrameWorkConfiguration.swift */; };
 		02E317EB29C83E68009BF903 /* DIECInternalStoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317EA29C83E68009BF903 /* DIECInternalStoreHelper.swift */; };
 		02E317EE29C83F5E009BF903 /* DIECModelsResponseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317ED29C83F5E009BF903 /* DIECModelsResponseUtils.swift */; };
+		02FB53A329C8F3630030A821 /* DIECInternalStoreCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53A229C8F3630030A821 /* DIECInternalStoreCoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		02E317E529C82352009BF903 /* DIECFrameWorkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIECFrameWorkConfiguration.swift; sourceTree = "<group>"; };
 		02E317EA29C83E68009BF903 /* DIECInternalStoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIECInternalStoreHelper.swift; sourceTree = "<group>"; };
 		02E317ED29C83F5E009BF903 /* DIECModelsResponseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIECModelsResponseUtils.swift; sourceTree = "<group>"; };
+		02FB53A229C8F3630030A821 /* DIECInternalStoreCoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIECInternalStoreCoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				02E317EA29C83E68009BF903 /* DIECInternalStoreHelper.swift */,
+				02FB53A229C8F3630030A821 /* DIECInternalStoreCoreDataHelper.swift */,
 			);
 			path = DIECInternalStoreHelper;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				02E317DF29C81F3A009BF903 /* DIECBaseApi.swift in Sources */,
 				02E317EE29C83F5E009BF903 /* DIECModelsResponseUtils.swift in Sources */,
+				02FB53A329C8F3630030A821 /* DIECInternalStoreCoreDataHelper.swift in Sources */,
 				02E317E629C82352009BF903 /* DIECFrameWorkConfiguration.swift in Sources */,
 				02E317DB29C81C50009BF903 /* DIECServiceCoordinator.swift in Sources */,
 				02E317EB29C83E68009BF903 /* DIECInternalStoreHelper.swift in Sources */,

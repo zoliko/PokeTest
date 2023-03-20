@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import DITPExternalConnection
+import FirebaseAuth
 
 public class DIELoginManager {
     

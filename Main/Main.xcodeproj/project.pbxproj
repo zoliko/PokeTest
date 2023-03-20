@@ -39,6 +39,7 @@
 		02E317E329C820EF009BF903 /* DITPExternalConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02E317E829C83835009BF903 /* MainViewInteractorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */; };
 		02FB539129C86EC40030A821 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02FB539029C86EC40030A821 /* GoogleService-Info.plist */; };
+		02FB53A129C8ECBC0030A821 /* MainDataStoreContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53A029C8ECBC0030A821 /* MainDataStoreContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +89,7 @@
 		02E317E129C820EF009BF903 /* DITPExternalConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPExternalConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractorExtension.swift; sourceTree = "<group>"; };
 		02FB539029C86EC40030A821 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02FB53A029C8ECBC0030A821 /* MainDataStoreContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataStoreContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				02789F5A29C6E707005AC18B /* AppDelegate.swift */,
 				02789F5C29C6E707005AC18B /* SceneDelegate.swift */,
+				02FB53A029C8ECBC0030A821 /* MainDataStoreContext.swift */,
 				023B094929C7152F006B7D1E /* View */,
 				02789F6629C6E708005AC18B /* Assets.xcassets */,
 				02789F6B29C6E708005AC18B /* Info.plist */,
@@ -360,6 +363,7 @@
 			files = (
 				02E3177829C73EF8009BF903 /* EnrollmentRouter.swift in Sources */,
 				02E3177629C73EEB009BF903 /* EnrollmentEntity.swift in Sources */,
+				02FB53A129C8ECBC0030A821 /* MainDataStoreContext.swift in Sources */,
 				02789F5F29C6E707005AC18B /* ViewController.swift in Sources */,
 				02E317C129C7F0C5009BF903 /* MainViewControllerExtension.swift in Sources */,
 				02E317C429C7F0C5009BF903 /* MainViewRouter.swift in Sources */,

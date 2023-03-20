@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     
@@ -14,19 +15,18 @@ public class EnrollmentPresenter: EnrollmentPresenterProtocol {
     public var route: EnrollmentRouterProtocol?
     
   
-    public func loggIn() {
-        interactor?.requestloggIn()
+    public func loggIn(context: NSManagedObjectContext) {
+        interactor?.requestloggIn(context: context)
     }
     
-    public func registerUser(withEmail email: String, withPassword password: String) {
-        interactor?.requestRegisterUser(withEmail: email, withPassword: password)
+    public func registerUser(withEmail email: String, withPassword password: String, context: NSManagedObjectContext) {
+        interactor?.requestRegisterUser(withEmail: email, withPassword: password, context: context)
     }
     
 }
 extension EnrollmentPresenter: EnrollmentInteractorOutputProtocol {
-    
-    public func resiveResponseMessage(message: String?) {
-        view?.showMessage(message: message)
+    public func resiveResponseMessage(title: String, message: String?) {
+        view?.showMessage(title: title, message: message)
     }
     
     public func responseloggIn() {
@@ -34,7 +34,7 @@ extension EnrollmentPresenter: EnrollmentInteractorOutputProtocol {
     }
     
     public func responseRegisterUser(dataUser: FirebaseUserData) {
-        print(dataUser)
+        route?.goToMainView(view: view)
     }
     
     
