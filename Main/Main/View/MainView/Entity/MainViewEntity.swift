@@ -6,5 +6,14 @@
 //
 
 import Foundation
+import DITPExternalConnection
 
+public struct pokemonInitialListResponse: ModelsResponseUtils {
+    let results: [pokemonInitialInfo]
+}
+public struct pokemonInitialInfo: ModelsResponseUtils {
+    
+    let name: String
+    let url: String
 
+}

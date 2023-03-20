@@ -37,6 +37,7 @@
 		02E317E029C820EA009BF903 /* DITPEnrollment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3179229C7AEA9009BF903 /* DITPEnrollment.framework */; };
 		02E317E229C820EF009BF903 /* DITPExternalConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; };
 		02E317E329C820EF009BF903 /* DITPExternalConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E317E129C820EF009BF903 /* DITPExternalConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02E317E829C83835009BF903 /* MainViewInteractorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +85,7 @@
 		02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
 		02E317BD29C7F0C5009BF903 /* MainViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
 		02E317E129C820EF009BF903 /* DITPExternalConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPExternalConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				02E317BB29C7F0C5009BF903 /* MainViewInteractor.swift */,
+				02E317E729C83835009BF903 /* MainViewInteractorExtension.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				02789F5D29C6E707005AC18B /* SceneDelegate.swift in Sources */,
 				02E317BF29C7F0C5009BF903 /* MainViewPresenter.swift in Sources */,
 				02E317BE29C7F0C5009BF903 /* MainViewEntity.swift in Sources */,
+				02E317E829C83835009BF903 /* MainViewInteractorExtension.swift in Sources */,
 				02E3177229C73ED4009BF903 /* EnrollmentInteractor.swift in Sources */,
 				02E3177A29C7424F009BF903 /* EnrollmentViewControllerExtension.swift in Sources */,
 				02E3176829C73838009BF903 /* EnrollmentViewController.swift in Sources */,

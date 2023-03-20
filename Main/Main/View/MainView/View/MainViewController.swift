@@ -16,11 +16,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-
+        presenter?.loadListPokemon()
     }
     
     func setUpView() {
-        print("MainView")
         view.backgroundColor = .primaryYellow
     }
 }

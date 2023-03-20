@@ -17,15 +17,24 @@ public class DIECServiceCoordinator {
                                                 handler: @escaping DIECServiceHandler ) {
         
         let urlService = "\(baseAPi)\(endPoint)"
-        guard let url = URL(string: urlService) else {
+        guard let url = URL(string: urlService)
+        else {
             handler(nil, nil, nil)
             return
         }
         URLSession.shared.dataTask(with: url, completionHandler: { dataResponse, serviceResponse, errorResponse in
             DispatchQueue.main.async {
                 guard let data = dataResponse,
-                      let objectResponse = decodeJsonDataTo(object: structureType,with: data) else {
-                    handler(nil,serviceResponse,errorResponse)
+                      let objectResponse = decodeJsonDataTo(object: structureType, with: data)
+                else {
+                    guard let objectString = DIECInternalStoreHelper.recoverObjectInString(withKey: "keyInternalStore/\(endPoint)"),
+                          let data =  objectString.data(using: .utf8),
+                          let objectResponse = decodeJsonDataTo(object: structureType, with: data)
+                    else {
+                         handler(nil,serviceResponse,errorResponse)
+                         return
+                    }
+                    handler(objectResponse, nil, nil)
                     return
                 }
                 handler(objectResponse, serviceResponse, nil)
@@ -39,5 +48,8 @@ public class DIECServiceCoordinator {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try? decoder.decode(structureType, from: infoData)
     }
+    
+    
+    
 }
 

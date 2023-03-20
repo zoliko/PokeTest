@@ -8,15 +8,18 @@
 import Foundation
 
 public class MainViewPresenter: MainViewPresenterProtocol {
-    
+
     public var interactor: MainViewInteractorInputProtocol?
     weak public var view: MainViewViewProtocol?
     public var route: MainViewRouterProtocol?
 
+    public func loadListPokemon() {
+        interactor?.requestListPokemon()
+    }
     
 }
 extension MainViewPresenter: MainViewInteractorOutputProtocol {
-    
-
-    
+    public func responseListPokemon(listPokemon: pokemonInitialListResponse) {
+        view?.showListPokemon(listPokemon: listPokemon)
+    }
 }

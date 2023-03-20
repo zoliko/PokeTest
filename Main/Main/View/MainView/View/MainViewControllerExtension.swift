@@ -8,5 +8,7 @@
 import Foundation
 
 extension MainViewController: MainViewViewProtocol {
-
+    func showListPokemon(listPokemon: pokemonInitialListResponse) {
+        print(listPokemon)
+    }
 }
