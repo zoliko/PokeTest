@@ -42,7 +42,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJ6-wA-Z8E" customClass="DIVCTextField" customModule="DITPVisualComponents">
                                 <rect key="frame" x="43" y="413" width="328" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
                                         <integer key="value" value="1"/>
@@ -50,9 +50,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erR-rz-bFw" customClass="DIVCTextField" customModule="DITPVisualComponents">
-                                <rect key="frame" x="43" y="485" width="328" height="34"/>
+                                <rect key="frame" x="43" y="485" width="328" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
                                         <integer key="value" value="1"/>
@@ -60,7 +60,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZp-24-J7k" customClass="DIVCButton" customModule="DITPVisualComponents">
-                                <rect key="frame" x="250" y="579" width="121" height="35"/>
+                                <rect key="frame" x="250" y="578" width="121" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="121" id="6me-Sw-fv9"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="Crz-Cg-Mnr"/>
@@ -316,7 +316,7 @@
             <size key="intrinsicContentSize" width="76" height="34.5"/>
         </designable>
         <designable name="erR-rz-bFw">
-            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+            <size key="intrinsicContentSize" width="123.5" height="33"/>
         </designable>
         <designable name="wZp-24-J7k">
             <size key="intrinsicContentSize" width="84" height="34.5"/>

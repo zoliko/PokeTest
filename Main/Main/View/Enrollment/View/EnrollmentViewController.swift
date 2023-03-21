@@ -8,6 +8,7 @@
 import UIKit
 import DITPVisualComponents
 import DITPFunctionalities
+import CoreData
 
 class EnrollmentViewController: UIViewController {
 
@@ -36,19 +37,17 @@ class EnrollmentViewController: UIViewController {
         inputPass.placeHolderTextField = "Contraseña"
     }
     @IBAction func buttonAccionRegister(_ sender: UIButton) {
-        if inputUser.isValidEmail() && !inputPass.isEmpy() {
-            guard let email = inputUser.text,
-                  let password = inputPass.text,
-                  let context = self.getCoreDataContext()
-            else {
-                return
-            }
-            presenter?.registerUser(withEmail: email, withPassword: password, context: context)
-        }
-        inputUser.changeColorBorderByValidation(validationCase: .error)
-        inputPass.changeColorBorderByValidation(validationCase: .error)
+        validateInput(completion: { [weak self] context, email, password in
+            self?.presenter?.registerUser(withEmail: email, withPassword: password, context: context)
+        })
     }
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {
+        validateInput(completion: { [weak self] context, email, password in
+            self?.presenter?.loggIn(withEmail: email, withPassword: password, context: context)
+        })
+    }
+    
+    func validateInput(completion: ((_ context: NSManagedObjectContext,_ user: String, _ password: String) -> Void)? ) {
         if inputUser.isValidEmail() && !inputPass.isEmpy() {
             guard let email = inputUser.text,
                   let password = inputPass.text,
@@ -56,10 +55,17 @@ class EnrollmentViewController: UIViewController {
             else {
                 return
             }
-            presenter?.loggIn(withEmail: email, withPassword: password, context: context)
+            inputUser.changeColorBorderByValidation(validationCase: .success)
+            inputPass.changeColorBorderByValidation(validationCase: .success)
+            completion?(context, email, password)
+            
         }
-        inputUser.changeColorBorderByValidation(validationCase: .error)
-        inputPass.changeColorBorderByValidation(validationCase: .error)
+        else {
+            inputUser.changeColorBorderByValidation(validationCase: .error)
+            inputPass.changeColorBorderByValidation(validationCase: .error)
+        }
+        inputUser.text = ""
+        inputPass.text = ""
     }
     
     deinit {
