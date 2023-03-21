@@ -31,3 +31,15 @@ public struct pokemonDescriptionflavorText: ModelsResponseUtils {
 public struct pokemonDescriptionlanguage: ModelsResponseUtils {
     let name: String
 }
+
+//MARK: - pokemonMovesResponse
+
+public struct pokemonMovesResponse: ModelsResponseUtils {
+    let moves: [pokemonMovesData]
+}
+public struct pokemonMovesData: ModelsResponseUtils {
+    let move: pokemonMoves
+}
+public struct pokemonMoves: ModelsResponseUtils {
+    let name: String
+}

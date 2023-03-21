@@ -31,4 +31,15 @@ internal extension MainViewInteractor {
             self?.presenter?.responsePokemonDescription(pokemonDescription: pokemonDescription)
         })
     }
+    
+    func getMovesFrom(endPoint: String) {
+        DIECServiceCoordinator.getService(endPoint: endPoint, structureType: pokemonMovesResponse.self, handler: { [weak self] data, service, error in
+            guard let pokemonMoves = data  as? pokemonMovesResponse
+            else {
+                return
+            }
+            DIECInternalStoreHelper.saveObject(withKey: "keyInternalStore/\(endPoint)", object: pokemonMoves)
+            self?.presenter?.responsePokemonMoves(pokemonMoves: pokemonMoves)
+        })
+    }
 }

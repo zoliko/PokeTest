@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024B023829C9AB0D00AC2FC0 /* DITPExternalConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024B023729C9AB0D00AC2FC0 /* DITPExternalConnection.framework */; };
+		024B023929C9AB0D00AC2FC0 /* DITPExternalConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 024B023729C9AB0D00AC2FC0 /* DITPExternalConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02E3178929C7A93C009BF903 /* DITPEnrollment.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E3178829C7A93C009BF903 /* DITPEnrollment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02E3179129C7A98D009BF903 /* DIELoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3179029C7A98D009BF903 /* DIELoginManager.swift */; };
 		02FB538D29C86AF50030A821 /* DIERegisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB538C29C86AF50030A821 /* DIERegisterManager.swift */; };
@@ -14,7 +16,22 @@
 		02FB539629C870A30030A821 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02FB539529C870A30030A821 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		024B023A29C9AB0D00AC2FC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				024B023929C9AB0D00AC2FC0 /* DITPExternalConnection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		024B023729C9AB0D00AC2FC0 /* DITPExternalConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DITPExternalConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E3178529C7A93C009BF903 /* DITPEnrollment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPEnrollment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E3178829C7A93C009BF903 /* DITPEnrollment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPEnrollment.h; sourceTree = "<group>"; };
 		02E3179029C7A98D009BF903 /* DIELoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIELoginManager.swift; sourceTree = "<group>"; };
@@ -29,6 +46,7 @@
 			files = (
 				02FB539429C870A30030A821 /* FirebaseAnalytics in Frameworks */,
 				02FB539629C870A30030A821 /* FirebaseAuth in Frameworks */,
+				024B023829C9AB0D00AC2FC0 /* DITPExternalConnection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +91,7 @@
 		02FB538629C86A8A0030A821 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				024B023729C9AB0D00AC2FC0 /* DITPExternalConnection.framework */,
 				02FB538729C86A8A0030A821 /* DITPFireBaseUtils.framework */,
 			);
 			name = Frameworks;
@@ -108,6 +127,7 @@
 				02E3178129C7A93C009BF903 /* Sources */,
 				02E3178229C7A93C009BF903 /* Frameworks */,
 				02E3178329C7A93C009BF903 /* Resources */,
+				024B023A29C9AB0D00AC2FC0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

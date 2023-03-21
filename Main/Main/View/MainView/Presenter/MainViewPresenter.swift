@@ -8,6 +8,8 @@
 import Foundation
 
 public class MainViewPresenter: MainViewPresenterProtocol {
+    
+    
     public var interactor: MainViewInteractorInputProtocol?
     weak public var view: MainViewViewProtocol?
     public var route: MainViewRouterProtocol?
@@ -22,11 +24,13 @@ public class MainViewPresenter: MainViewPresenterProtocol {
         interactor?.requestPokemonDescription(pokemonID: pokemonID)
     }
     
+    public func loadPokemonMovesWith(pokemonID: Int) {
+        interactor?.requestPokemonMoves(pokemonID: pokemonID)
+    }
+    
 }
 extension MainViewPresenter: MainViewInteractorOutputProtocol {
     
-    
-   
     public func responseListPokemon(listPokemon: pokemonInitialListResponse) {
         view?.showListPokemon(listPokemon: listPokemon)
     }
@@ -38,5 +42,10 @@ extension MainViewPresenter: MainViewInteractorOutputProtocol {
     public func responsePokemonDescription(pokemonDescription: pokemonDescriptionResponse) {
         view?.showPokemonDescription(description: pokemonDescription)
     }
+    
+    public func responsePokemonMoves(pokemonMoves moves: pokemonMovesResponse) {
+        view?.showPokemonMoves(pokemonMoves: moves)
+    }
+    
     
 }

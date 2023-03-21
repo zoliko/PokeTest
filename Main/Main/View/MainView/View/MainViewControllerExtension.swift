@@ -31,9 +31,19 @@ extension MainViewController: MainViewViewProtocol {
     }
     
     func showPokemonDescription(description: pokemonDescriptionResponse) {
-        var descriptinfound = description.flavorTextEntries.first(where: { $0.language.name == "es" })?.flavorText.replacingOccurrences(of: "\n", with: ", ")
+        let descriptinfound = description.flavorTextEntries.first(where: { $0.language.name == "es" })?.flavorText.replacingOccurrences(of: "\n", with: " ")
         pokemonDescription.text = descriptinfound
     }
+    
+    func showPokemonMoves(pokemonMoves moves: pokemonMovesResponse) {
+        let movesListString = moves.moves.map({
+            $0.move.name.replacingOccurrences(of: "-", with: " ")
+        })
+        print(movesListString)
+
+    }
+    
+    
 }
 
 extension MainViewController: DIVCCarouselPokemonDelegate  {

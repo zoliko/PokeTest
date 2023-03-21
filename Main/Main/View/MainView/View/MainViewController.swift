@@ -41,6 +41,7 @@ class MainViewController: UIViewController {
         guard let element = pokemonList?.results[row] else { return  }
         nameButtom.setTitle(element.name, for: .normal)
         presenter?.loadPokemonDescriptionWith(pokemonID: (row + 1))
+        presenter?.loadPokemonMovesWith(pokemonID: (row + 1))
     }
 }
 
