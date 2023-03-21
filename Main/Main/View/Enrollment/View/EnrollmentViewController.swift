@@ -23,6 +23,7 @@ class EnrollmentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        registerNotifications()
     }
     
     func setUpView() {
@@ -33,12 +34,7 @@ class EnrollmentViewController: UIViewController {
         
         inputUser.placeHolderTextField = "Usuario"
         inputPass.placeHolderTextField = "Contraseña"
-        
-        inputUser.text = "Waxelo77@gmail.com"
-        inputPass.text = "23Sauco23"
-    
     }
-
     @IBAction func buttonAccionRegister(_ sender: UIButton) {
         if inputUser.isValidEmail() && !inputPass.isEmpy() {
             guard let email = inputUser.text,
@@ -47,9 +43,10 @@ class EnrollmentViewController: UIViewController {
             else {
                 return
             }
-            
             presenter?.registerUser(withEmail: email, withPassword: password, context: context)
-        } 
+        }
+        inputUser.changeColorBorderByValidation(validationCase: .error)
+        inputPass.changeColorBorderByValidation(validationCase: .error)
     }
     @IBAction func buttonAccionLoggin(_ sender: UIButton) {
         if inputUser.isValidEmail() && !inputPass.isEmpy() {
@@ -61,5 +58,13 @@ class EnrollmentViewController: UIViewController {
             }
             presenter?.loggIn(withEmail: email, withPassword: password, context: context)
         }
+        inputUser.changeColorBorderByValidation(validationCase: .error)
+        inputPass.changeColorBorderByValidation(validationCase: .error)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self,name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self,name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self,name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
 }
