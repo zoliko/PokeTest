@@ -138,20 +138,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-EF-SmA" customClass="DIVCCarouselPokemon" customModule="DITPVisualComponents">
-                                <rect key="frame" x="0.0" y="48" width="414" height="288"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="288"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="Id1-Mj-yQU"/>
+                                    <constraint firstAttribute="width" constant="414" id="LWt-UF-0FF"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfw-KJ-5Ig" customClass="DIVCButton" customModule="DITPVisualComponents">
+                                <rect key="frame" x="104" y="384" width="206" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SCq-IH-lGl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CBd-EF-SmA" firstAttribute="top" secondItem="SCq-IH-lGl" secondAttribute="top" id="Gew-vQ-EXp"/>
-                            <constraint firstItem="CBd-EF-SmA" firstAttribute="leading" secondItem="SCq-IH-lGl" secondAttribute="leading" id="Opb-jf-FHc"/>
-                            <constraint firstItem="SCq-IH-lGl" firstAttribute="bottom" secondItem="CBd-EF-SmA" secondAttribute="bottom" constant="526" id="cfy-aC-9Fr"/>
-                            <constraint firstItem="CBd-EF-SmA" firstAttribute="trailing" secondItem="SCq-IH-lGl" secondAttribute="trailing" id="klM-HC-Z7i"/>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="trailing" secondItem="SCq-IH-lGl" secondAttribute="trailing" id="Cce-xf-7LW"/>
+                            <constraint firstItem="SCq-IH-lGl" firstAttribute="trailing" secondItem="wfw-KJ-5Ig" secondAttribute="trailing" constant="104" id="RgT-5n-9ih"/>
+                            <constraint firstItem="wfw-KJ-5Ig" firstAttribute="top" secondItem="CBd-EF-SmA" secondAttribute="bottom" constant="16" id="gB0-My-9UI"/>
+                            <constraint firstItem="wfw-KJ-5Ig" firstAttribute="leading" secondItem="SCq-IH-lGl" secondAttribute="leading" constant="104" id="hnu-hu-A9E"/>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="leading" secondItem="SCq-IH-lGl" secondAttribute="leading" id="sCW-tc-ade"/>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="top" secondItem="SCq-IH-lGl" secondAttribute="top" constant="32" id="w3Y-1E-fwE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nameButtom" destination="wfw-KJ-5Ig" id="ikE-xt-zgH"/>
                         <outlet property="pokemonCarousel" destination="CBd-EF-SmA" id="US7-XF-gZm"/>
                     </connections>
                 </viewController>
@@ -205,6 +221,9 @@
         </designable>
         <designable name="wZp-24-J7k">
             <size key="intrinsicContentSize" width="84" height="34.5"/>
+        </designable>
+        <designable name="wfw-KJ-5Ig">
+            <size key="intrinsicContentSize" width="75" height="34.5"/>
         </designable>
     </designables>
     <resources>

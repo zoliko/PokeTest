@@ -28,7 +28,7 @@ class DIVCPokemonCell: UICollectionViewCell {
     private lazy var pokemonImage: UIImageView = {
         let pokemonImage = UIImageView(frame: contentView.bounds)
         pokemonImage.layer.cornerRadius = 13.5
-        //pokemonImage.rounderCorners()
+        pokemonImage.rounderCorners()
         return pokemonImage
     }()
     required init?(coder: NSCoder) {
@@ -44,8 +44,8 @@ class DIVCPokemonCell: UICollectionViewCell {
         NSLayoutConstraint.activate([ pokemonTitle.centerXAnchor.constraint(equalTo: contentView.layoutMarginsGuide.centerXAnchor),
                                       pokemonTitle.centerYAnchor.constraint(equalTo: contentView.layoutMarginsGuide.centerYAnchor)])
     }
-    func configuration(dataInfo: [String : Any] ) {
-        pokemonImage.loadExternalImage(from: "")
-        pokemonTitle.text = "dataInfo.getMovieTitleString()"
+    func configuration(dataInfo: DIVCCarouselPokemonCellModel) {
+        pokemonImage.loadExternalImage(from: dataInfo.imageUrl)
+        pokemonTitle.text = ""
     }
 }

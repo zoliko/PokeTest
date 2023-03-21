@@ -7,26 +7,37 @@
 
 import UIKit
 
+public protocol DIVCCarouselPokemonDelegate: AnyObject {
+    func DIVCCarouselPokemon(_ carouselPokemon: DIVCCarouselPokemon, currentItem row: Int)
+}
+
 public class DIVCCarouselPokemon: UIView {
    
+    public weak var delegate: DIVCCarouselPokemonDelegate?
     private(set) lazy var elements: [DIVCCarouselPokemonCellModel] = {
         return []
     }()
     
+    internal var actualItem: Int = 0 {
+        didSet {
+            delegate?.DIVCCarouselPokemon(self, currentItem: actualItem)
+        }
+    }
+    
     public lazy var carousel: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 48
-        layout.minimumInteritemSpacing = 48
+        layout.minimumLineSpacing = 30
+        layout.minimumInteritemSpacing = 30
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let carousel = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
-        carousel.backgroundColor = UIColor.black
+        carousel.backgroundColor = UIColor.appClear
         carousel.translatesAutoresizingMaskIntoConstraints = false
-        //carousel.delegate = self
-        //carousel.dataSource = self
+        carousel.delegate = self
+        carousel.dataSource = self
         carousel.showsHorizontalScrollIndicator = false
         carousel.showsVerticalScrollIndicator = false
-        carousel.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        carousel.contentInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)
         carousel.register(DIVCPokemonCell.self, forCellWithReuseIdentifier: DIVCPokemonCell.reuseIdentifier)
         return carousel
     }()
@@ -57,7 +68,8 @@ public class DIVCCarouselPokemon: UIView {
         carousel.reloadData()
     }
     public func configureCarousel(datInfo: DIVCCarouselPokemonModel) {
+        self.backgroundColor = .appClear
         self.elements = datInfo.results
-        //carousel.reloadData()
+        carousel.reloadData()
     }
 }

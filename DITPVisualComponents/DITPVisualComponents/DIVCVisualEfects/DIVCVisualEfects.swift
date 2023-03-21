@@ -11,4 +11,5 @@ import UIKit
 
 public enum DIVCVisualEfectsTags: Int {
     case gradientEfect = 100
+    case radialGradientEfect = 101
 }

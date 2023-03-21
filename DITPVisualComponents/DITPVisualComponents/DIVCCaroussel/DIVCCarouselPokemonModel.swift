@@ -9,7 +9,7 @@ import Foundation
 import DITPExternalConnection
 
 public struct DIVCCarouselPokemonModel {
-    let results: [DIVCCarouselPokemonCellModel]
+    public let results: [DIVCCarouselPokemonCellModel]
     
     public init(results: [DIVCCarouselPokemonCellModel]) {
         self.results = results
@@ -17,10 +17,10 @@ public struct DIVCCarouselPokemonModel {
 }
 public struct DIVCCarouselPokemonCellModel {
     
-    let name: String
-    let url: String
-    let pokemonID: String
-    let imageUrl: String
+    public let name: String
+    public let url: String
+    public let pokemonID: String
+    public let imageUrl: String
     
     public init(name: String, url: String) {
         self.name = name

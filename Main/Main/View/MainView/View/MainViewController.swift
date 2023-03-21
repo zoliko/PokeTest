@@ -14,15 +14,24 @@ class MainViewController: UIViewController {
     var presenter: MainViewPresenterProtocol?
     
     @IBOutlet weak var pokemonCarousel: DIVCCarouselPokemon!
+    @IBOutlet weak var nameButtom: DIVCButton!
+    
+    internal var pokemonList: DIVCCarouselPokemonModel? 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        pokemonCarousel.delegate = self
         presenter?.loadListPokemon()
+        
     }
     
     func setUpView() {
         view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
+    }
+    func reloadPokemonData(inRow row: Int ) {
+        guard let element = pokemonList?.results[row] else { return  }
+        nameButtom.setTitle(element.name, for: .normal)
     }
 }
 

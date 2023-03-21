@@ -12,7 +12,9 @@ extension MainViewController: MainViewViewProtocol {
     
     func showListPokemon(listPokemon: pokemonInitialListResponse) {
         let pokemonModel = getDataToCarouselPokemon(listPokemon: listPokemon)
+        pokemonList = pokemonModel
         pokemonCarousel.configureCarousel(datInfo: pokemonModel)
+        reloadPokemonData(inRow: 0)
     }
     
     func getDataToCarouselPokemon(listPokemon: pokemonInitialListResponse) -> DIVCCarouselPokemonModel {
@@ -25,3 +27,11 @@ extension MainViewController: MainViewViewProtocol {
     }
 }
     
+extension MainViewController: DIVCCarouselPokemonDelegate  {
+    
+    func DIVCCarouselPokemon(_ carouselPokemon: DITPVisualComponents.DIVCCarouselPokemon, currentItem row: Int) {
+        reloadPokemonData(inRow: row)
+    }
+    
+    
+}

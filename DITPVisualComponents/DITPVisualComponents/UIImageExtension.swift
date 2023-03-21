@@ -32,5 +32,16 @@ public extension UIImageView {
             }
         }
     }
+    
+    func rounderCorners(rounderValue: CGFloat = 13.5, backgroundColor: UIColor = UIColor.clear) {
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = self.frame
+        rectShape.position = self.center
+        rectShape.path = UIBezierPath(roundedRect: self.bounds,
+                                      byRoundingCorners: [.topRight , .topLeft,.bottomLeft,.bottomRight],
+                                      cornerRadii: CGSize(width: rounderValue, height: rounderValue)).cgPath
+        self.layer.backgroundColor = backgroundColor.cgColor
+        self.layer.mask = rectShape
+    }
 }
 
