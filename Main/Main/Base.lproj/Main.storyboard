@@ -136,13 +136,28 @@
                     <view key="view" contentMode="scaleToFill" id="HfR-Og-O6y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-EF-SmA" customClass="DIVCCarouselPokemon" customModule="DITPVisualComponents">
+                                <rect key="frame" x="0.0" y="48" width="414" height="288"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SCq-IH-lGl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="top" secondItem="SCq-IH-lGl" secondAttribute="top" id="Gew-vQ-EXp"/>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="leading" secondItem="SCq-IH-lGl" secondAttribute="leading" id="Opb-jf-FHc"/>
+                            <constraint firstItem="SCq-IH-lGl" firstAttribute="bottom" secondItem="CBd-EF-SmA" secondAttribute="bottom" constant="526" id="cfy-aC-9Fr"/>
+                            <constraint firstItem="CBd-EF-SmA" firstAttribute="trailing" secondItem="SCq-IH-lGl" secondAttribute="trailing" id="klM-HC-Z7i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonCarousel" destination="CBd-EF-SmA" id="US7-XF-gZm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nL4-mW-KKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="-56"/>
+            <point key="canvasLocation" x="1666.6666666666667" y="-56.25"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ELd-Re-fOJ">
@@ -180,13 +195,16 @@
     </scenes>
     <designables>
         <designable name="IJ6-wA-Z8E">
-            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="YIh-st-1Qo">
             <size key="intrinsicContentSize" width="76" height="34.5"/>
         </designable>
         <designable name="erR-rz-bFw">
-            <size key="intrinsicContentSize" width="123.5" height="34.5"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="wZp-24-J7k">
+            <size key="intrinsicContentSize" width="84" height="34.5"/>
         </designable>
     </designables>
     <resources>

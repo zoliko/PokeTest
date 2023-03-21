@@ -10,6 +10,7 @@
 		023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B092B29C6EDB0006B7D1E /* DIFDensityPixel.swift */; };
 		02789F7F29C6E755005AC18B /* DITPFunctionalities.h in Headers */ = {isa = PBXBuildFile; fileRef = 02789F7E29C6E755005AC18B /* DITPFunctionalities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FB539929C886ED0030A821 /* DIFAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB539829C886ED0030A821 /* DIFAlertMessage.swift */; };
+		02FB53B029C950FF0030A821 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53AF29C950FF0030A821 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		02789F7B29C6E755005AC18B /* DITPFunctionalities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DITPFunctionalities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02789F7E29C6E755005AC18B /* DITPFunctionalities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPFunctionalities.h; sourceTree = "<group>"; };
 		02FB539829C886ED0030A821 /* DIFAlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFAlertMessage.swift; sourceTree = "<group>"; };
+		02FB53AF29C950FF0030A821 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = ../../DITPVisualComponents/DITPVisualComponents/UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				02FB539729C886AF0030A821 /* DIFAlertMessage */,
 				023B092D29C6EDBD006B7D1E /* DIFDensityPixel */,
 				02789F7E29C6E755005AC18B /* DITPFunctionalities.h */,
+				02FB53AF29C950FF0030A821 /* UIImageExtension.swift */,
 			);
 			path = DITPFunctionalities;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				02FB539929C886ED0030A821 /* DIFAlertMessage.swift in Sources */,
 				023B092C29C6EDB0006B7D1E /* DIFDensityPixel.swift in Sources */,
+				02FB53B029C950FF0030A821 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

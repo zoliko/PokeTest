@@ -50,6 +50,8 @@ public class DIECServiceCoordinator {
     }
     
     
-    
+    public static func getAPIResoucerURL() -> String{
+        return DIECBaseApi.baseResource.urlString
+    }
 }
 

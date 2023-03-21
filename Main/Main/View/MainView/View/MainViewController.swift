@@ -13,6 +13,8 @@ class MainViewController: UIViewController {
 
     var presenter: MainViewPresenterProtocol?
     
+    @IBOutlet weak var pokemonCarousel: DIVCCarouselPokemon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -20,7 +22,7 @@ class MainViewController: UIViewController {
     }
     
     func setUpView() {
-        view.backgroundColor = .primaryYellow
+        view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
     }
 }
 

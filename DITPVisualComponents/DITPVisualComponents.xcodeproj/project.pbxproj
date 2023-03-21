@@ -25,6 +25,10 @@
 		02E317AD29C7DE5F009BF903 /* DIVCButtonConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317AC29C7DE5F009BF903 /* DIVCButtonConfigurationModel.swift */; };
 		02E317AF29C7DE7F009BF903 /* DIVCButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E317AE29C7DE7F009BF903 /* DIVCButtonStyles.swift */; };
 		02FB53A529C90D240030A821 /* DIVCShakeEfects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53A429C90D240030A821 /* DIVCShakeEfects.swift */; };
+		02FB53AA29C948D10030A821 /* DIVCCarouselPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53A929C948D10030A821 /* DIVCCarouselPokemon.swift */; };
+		02FB53AE29C94EC60030A821 /* DIVCPokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53AD29C94EC60030A821 /* DIVCPokemonCell.swift */; };
+		02FB53B229C954360030A821 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53B129C954360030A821 /* UIImageExtension.swift */; };
+		02FB53B429C955B10030A821 /* DIVCCarouselPokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FB53B329C955B10030A821 /* DIVCCarouselPokemonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		02E317AC29C7DE5F009BF903 /* DIVCButtonConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCButtonConfigurationModel.swift; sourceTree = "<group>"; };
 		02E317AE29C7DE7F009BF903 /* DIVCButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCButtonStyles.swift; sourceTree = "<group>"; };
 		02FB53A429C90D240030A821 /* DIVCShakeEfects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCShakeEfects.swift; sourceTree = "<group>"; };
+		02FB53A929C948D10030A821 /* DIVCCarouselPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCCarouselPokemon.swift; sourceTree = "<group>"; };
+		02FB53AD29C94EC60030A821 /* DIVCPokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCPokemonCell.swift; sourceTree = "<group>"; };
+		02FB53B129C954360030A821 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		02FB53B329C955B10030A821 /* DIVCCarouselPokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIVCCarouselPokemonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		023B091E29C6EA80006B7D1E /* DITPVisualComponents */ = {
 			isa = PBXGroup;
 			children = (
+				02FB53B129C954360030A821 /* UIImageExtension.swift */,
+				02FB53A629C948140030A821 /* DIVCCaroussel */,
 				023B093B29C6F641006B7D1E /* assets.xcassets */,
 				02E317A629C7D7F9009BF903 /* DIVCValidationCase */,
 				02E317A929C7DDEC009BF903 /* DIVCButton */,
@@ -147,6 +157,16 @@
 				02E317AA29C7DE0B009BF903 /* DIVCButton.swift */,
 			);
 			path = DIVCButton;
+			sourceTree = "<group>";
+		};
+		02FB53A629C948140030A821 /* DIVCCaroussel */ = {
+			isa = PBXGroup;
+			children = (
+				02FB53A929C948D10030A821 /* DIVCCarouselPokemon.swift */,
+				02FB53AD29C94EC60030A821 /* DIVCPokemonCell.swift */,
+				02FB53B329C955B10030A821 /* DIVCCarouselPokemonModel.swift */,
+			);
+			path = DIVCCaroussel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,13 +257,17 @@
 				02E317A529C7D68B009BF903 /* DIVCTextFieldValidationsEfectsExtension.swift in Sources */,
 				023B093F29C6F7AA006B7D1E /* DIVCFrameWorkConfiguration.swift in Sources */,
 				02E317AD29C7DE5F009BF903 /* DIVCButtonConfigurationModel.swift in Sources */,
+				02FB53AE29C94EC60030A821 /* DIVCPokemonCell.swift in Sources */,
 				023B094229C6FBC8006B7D1E /* DIVCGradientColorEfect.swift in Sources */,
 				02E3179E29C7D030009BF903 /* DIVCTextFieldExtension.swift in Sources */,
 				023B092829C6EB53006B7D1E /* DIVCPalletColor.swift in Sources */,
+				02FB53B429C955B10030A821 /* DIVCCarouselPokemonModel.swift in Sources */,
 				02E317A829C7D802009BF903 /* DIVCValidationCase.swift in Sources */,
 				02E317AB29C7DE0B009BF903 /* DIVCButton.swift in Sources */,
+				02FB53B229C954360030A821 /* UIImageExtension.swift in Sources */,
 				02FB53A529C90D240030A821 /* DIVCShakeEfects.swift in Sources */,
 				023B092A29C6EC3C006B7D1E /* UIColorExtension.swift in Sources */,
+				02FB53AA29C948D10030A821 /* DIVCCarouselPokemon.swift in Sources */,
 				02E3179929C7B374009BF903 /* DIVCTextFieldStyles.swift in Sources */,
 				02E3179729C7B248009BF903 /* DIVCTextField.swift in Sources */,
 			);
