@@ -29,6 +29,7 @@ class DIVCPokemonCell: UICollectionViewCell {
         let pokemonImage = UIImageView(frame: contentView.bounds)
         pokemonImage.layer.cornerRadius = 13.5
         pokemonImage.rounderCorners()
+        pokemonImage.image = UIImage(named: "DIVCLogoPokeball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)
         return pokemonImage
     }()
     required init?(coder: NSCoder) {

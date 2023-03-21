@@ -30,7 +30,7 @@ extension DIVCCarouselPokemon: UICollectionViewDataSource {
         var indexRow = 0
         var pos = (CGFloat(elements.count) * (scrollView.contentOffset.x)) / (scrollView.contentSize.width - 30)
         pos.round()
-        if pos <= CGFloat(elements.count ) { indexRow = Int(pos)  } else { indexRow = 0 }
+        if pos <= CGFloat(elements.count ) && pos >= 0{ indexRow = Int(pos)  } else { indexRow = 0 }
         if actualItem != indexRow {
             actualItem = indexRow
         }

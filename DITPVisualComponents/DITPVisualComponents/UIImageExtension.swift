@@ -12,9 +12,6 @@ public extension UIImageView {
         guard let stringPoster = stringURL,
               let url = URL(string: stringPoster)
         else {
-            DispatchQueue.main.async {
-                self.image = UIImage(named: defaultImage)
-            }
             return
         }
         
@@ -22,9 +19,6 @@ public extension UIImageView {
             guard let data = try? Data(contentsOf: url),
                   let image = UIImage(data: data)
             else {
-                DispatchQueue.main.async {
-                    self?.image = UIImage(named: defaultImage)
-                }
                 return
             }
             DispatchQueue.main.async {
