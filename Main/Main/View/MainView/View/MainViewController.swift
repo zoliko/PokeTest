@@ -10,12 +10,15 @@ import DITPVisualComponents
 import DITPFunctionalities
 
 class MainViewController: UIViewController {
+    
     var presenter: MainViewPresenterProtocol?
+    
     @IBOutlet weak var pokemonCarousel: DIVCCarouselPokemon!
     @IBOutlet weak var nameButtom: DIVCButton!
     internal var pokemonList: DIVCCarouselPokemonModel?
     @IBOutlet weak var decoreImage: UIImageView!
     @IBOutlet weak var pokemonDescription: UITextView!
+    @IBOutlet weak var movesList: DIVCCarouselChips!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class MainViewController: UIViewController {
     
     func setUpView() {
         view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
+        movesList.backgroundColor = UIColor.clear
         decoreImage.image = UIImage(named: "DIVCShadowball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)?.withTintColor(.primaryWhite.withAlphaComponent(0.05), renderingMode: .alwaysOriginal)
         pokemonDescription.textColor = UIColor.primaryWhite
         pokemonDescription.layer.cornerRadius = pokemonDescription.frame.height / 8

@@ -7,6 +7,7 @@
 
 import Foundation
 import DITPVisualComponents
+import UIKit
 
 extension MainViewController: MainViewViewProtocol {
     
@@ -39,18 +40,19 @@ extension MainViewController: MainViewViewProtocol {
         let movesListString = moves.moves.map({
             $0.move.name.replacingOccurrences(of: "-", with: " ")
         })
-        print(movesListString)
-
+        
+        let modelConfiguration = DIVCCarouselChipsConfiguration(frame: .zero,
+                                                           optionsTitles: movesListString,
+                                                           itemBackgroundColor: UIColor.primaryYellow,
+                                                           itemBorderBackgroundColor: UIColor.primaryYellow,
+                                                           itemSelectedBackgroundColor: UIColor.primaryYellow,
+                                                           itemSelectedBorderBackgroundColor: UIColor.primaryYellow)
+        movesList.configure(with: modelConfiguration)
     }
-    
-    
 }
 
 extension MainViewController: DIVCCarouselPokemonDelegate  {
-    
     func DIVCCarouselPokemon(_ carouselPokemon: DITPVisualComponents.DIVCCarouselPokemon, currentItem row: Int) {
         reloadPokemonData(inRow: row)
     }
-    
-    
 }

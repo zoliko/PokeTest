@@ -30,6 +30,10 @@ public struct DIVCTButtonConfigurationModel {
             self.backgroundButton = DIVCPalletColor.primaryYellow
             self.backgroundBorderButton = DIVCPalletColor.primaryYellow
             self.colorTextButton = DIVCPalletColor.primaryWhite
+        case .text:
+            self.backgroundButton = DIVCPalletColor.primaryYellow
+            self.backgroundBorderButton = DIVCPalletColor.primaryWarning
+            self.colorTextButton = DIVCPalletColor.primaryWhite
         }
     }
 }

@@ -9,4 +9,5 @@ import Foundation
 
 public enum DIVCButtonStyles: Int {
     case basic = 0
+    case text = 1
 }
