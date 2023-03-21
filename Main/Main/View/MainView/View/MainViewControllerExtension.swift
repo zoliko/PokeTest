@@ -9,7 +9,7 @@ import Foundation
 import DITPVisualComponents
 
 extension MainViewController: MainViewViewProtocol {
-    
+
     func showListPokemon(listPokemon: pokemonInitialListResponse) {
         let pokemonModel = getDataToCarouselPokemon(listPokemon: listPokemon)
         pokemonList = pokemonModel
@@ -24,6 +24,10 @@ extension MainViewController: MainViewViewProtocol {
         })
         let model = DIVCCarouselPokemonModel(results: elements)
         return model
+    }
+    
+    func loggout() {
+        self.dismiss(animated: true)
     }
 }
     

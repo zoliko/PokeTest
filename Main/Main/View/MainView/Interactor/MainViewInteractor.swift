@@ -6,12 +6,19 @@
 //
 
 import Foundation
-
+import DITPEnrollment
 
 public class MainViewInteractor: MainViewInteractorInputProtocol {
+   
+    
     public var presenter: MainViewInteractorOutputProtocol?
     
     public func requestListPokemon() {
         getDataFrom(endPoint: "pokemon/?offset=0&limit=150")
+    }
+    
+    public func requestLoggout() {
+        DIELoginManager.loggOut()
+        presenter?.responseLoggout()
     }
 }

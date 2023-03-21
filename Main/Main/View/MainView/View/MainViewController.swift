@@ -10,14 +10,11 @@ import DITPVisualComponents
 import DITPFunctionalities
 
 class MainViewController: UIViewController {
-
     var presenter: MainViewPresenterProtocol?
-    
     @IBOutlet weak var pokemonCarousel: DIVCCarouselPokemon!
     @IBOutlet weak var nameButtom: DIVCButton!
-    
-    internal var pokemonList: DIVCCarouselPokemonModel? 
-    
+    internal var pokemonList: DIVCCarouselPokemonModel?
+    @IBOutlet weak var decoreImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -28,10 +25,14 @@ class MainViewController: UIViewController {
     
     func setUpView() {
         view.addGradientEfect(fistColor: .primaryBlue, secondColor: .secondaryBlue)
+        decoreImage.image = UIImage(named: "DIVCShadowball", in: DITPVisualComponentsBundleManager.bundle(), compatibleWith: nil)?.withTintColor(.primaryWhite.withAlphaComponent(0.05), renderingMode: .alwaysOriginal)
     }
     func reloadPokemonData(inRow row: Int ) {
         guard let element = pokemonList?.results[row] else { return  }
         nameButtom.setTitle(element.name, for: .normal)
+    }
+    @IBAction func loggoutAction(_ sender: UIButton) {
+        presenter?.loggout()
     }
 }
 
