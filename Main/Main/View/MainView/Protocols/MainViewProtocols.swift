@@ -16,21 +16,28 @@ public protocol MainViewPresenterProtocol: AnyObject {
     
     func loadListPokemon()
     func loggout()
+    
+    func loadPokemonDescriptionWith(pokemonID : Int)
 }
 // MARK: -  Protocol to interaction Presenter ---> Interactor
 public protocol MainViewInteractorInputProtocol: AnyObject {
     var presenter:  MainViewInteractorOutputProtocol? {get set}
     func requestListPokemon()
     func requestLoggout()
+    
+    func requestPokemonDescription(pokemonID : Int)
 }
 // MARK: -  Protocol to interaction Interactor ---> Presenter
 public protocol MainViewInteractorOutputProtocol: AnyObject {
     func responseListPokemon(listPokemon: pokemonInitialListResponse)
     func responseLoggout()
+    
+    func responsePokemonDescription(pokemonDescription: pokemonDescriptionResponse)
 }
 // MARK: -  Protocol to interaction Presenter ---> View
 public protocol MainViewViewProtocol: AnyObject {
     func showListPokemon(listPokemon: pokemonInitialListResponse)
+    func showPokemonDescription(description: pokemonDescriptionResponse)
     func loggout()
 }
 // MARK: -  Protocol to Routing

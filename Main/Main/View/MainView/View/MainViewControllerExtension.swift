@@ -9,7 +9,7 @@ import Foundation
 import DITPVisualComponents
 
 extension MainViewController: MainViewViewProtocol {
-
+    
     func showListPokemon(listPokemon: pokemonInitialListResponse) {
         let pokemonModel = getDataToCarouselPokemon(listPokemon: listPokemon)
         pokemonList = pokemonModel
@@ -29,8 +29,13 @@ extension MainViewController: MainViewViewProtocol {
     func loggout() {
         self.dismiss(animated: true)
     }
-}
     
+    func showPokemonDescription(description: pokemonDescriptionResponse) {
+        var descriptinfound = description.flavorTextEntries.first(where: { $0.language.name == "es" })?.flavorText.replacingOccurrences(of: "\n", with: ", ")
+        pokemonDescription.text = descriptinfound
+    }
+}
+
 extension MainViewController: DIVCCarouselPokemonDelegate  {
     
     func DIVCCarouselPokemon(_ carouselPokemon: DITPVisualComponents.DIVCCarouselPokemon, currentItem row: Int) {
